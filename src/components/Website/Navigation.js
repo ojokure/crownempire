@@ -54,12 +54,12 @@ const Navigation = ({ noheader, ishome }) => {
         className={isOpen ? "open responsive-nav" : "responsive-nav"}
         onClick={toggleNav}
       >
+        {/* <span></span>
         <span></span>
         <span></span>
         <span></span>
         <span></span>
-        <span></span>
-        <span></span>
+        <span></span> */}
       </button>
     </StyledNavigation>
   );

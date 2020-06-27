@@ -165,7 +165,7 @@ const Main = () => (
               Whether it be day or night, come rain come shine we at crown
               empire logistics are ever ready to be at your service to deliver
               that package or move that heavy duty materials 24 hours 7 days a
-              week
+              week.
             </p>
           </div>
         </div>
@@ -273,7 +273,7 @@ const MainContainer = styled.div`
     padding: 3rem 1rem;
 
     h3 {
-      font-size: 4rem;
+      font-size: 5rem;
       font-weight: bold;
       text-align: center;
       /* color: #efefef; */
@@ -351,15 +351,18 @@ const MainContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     /* background: #f2f6f5; */
-    margin: 8.5rem 0;
-    /* padding: 3rem 1rem; */
+    margin: 4.5rem 0;
+    margin-bottom: 70px;
+    padding: 3rem 1rem;
+    font-weight: bold;
 
     h3 {
-      font-size: 4rem;
+      font-size: 4.5rem;
       font-weight: bold;
       text-align: center;
       /* color: #efefef; */
       margin: 0;
+      margin-bottom: 2rem;
       /* text-decoration: underline; */
     }
 
@@ -396,10 +399,10 @@ const MainContainer = styled.div`
         /* width: 50%; */
         /* height: 11rem; */
         /* object-fit: cover; */
-        /* @media ${devices.mobile} { */
-          /* height: 13rem; */
-          /* width: 40%; */
-          /* margin-left: 110px; */
+        @media ${devices.mobile} {
+          height: 13rem;
+          width: 40%;
+          margin-left: 110px;
         }
       }
       .card-info {
@@ -437,7 +440,7 @@ const MainContainer = styled.div`
 
     h2 {
       font-weight: bold;
-      font-size: 2.5rem;
+      font-size: 4rem;
       margin-bottom: 4rem;
       max-width: 60rem;
       padding: 0 2rem;
@@ -470,6 +473,7 @@ const MainContainer = styled.div`
         /* line-height: 2; */
         font-size: 1.45rem;
         color: #545454;
+        font-weight: bold;
 
         @media ${devices.tablet} {
           text-align: center;
