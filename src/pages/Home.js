@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import * as actions from "../state/actions";
-import { toast } from "react-toastify";
+// import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { slides } from "../utils/data";
 import Slider from "../components/Website/Slider";
 import Navigation from "../components/Website/Navigation";
-import Roller from "../components/LoadingIndicator/roller";
+// import Roller from "../components/LoadingIndicator/roller";
 import Footer from "../components/Website/Footer";
 import Main from "../pages/Main";
 
