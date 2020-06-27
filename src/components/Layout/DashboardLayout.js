@@ -1,62 +1,68 @@
 import React from "react";
-import { NavLink } from 'react-router-dom';
-import PrivateRoute from '../Router/PrivateRoute';
+import { NavLink } from "react-router-dom";
+import PrivateRoute from "../Router/PrivateRoute";
 import Dashboard from "../../pages/Dashboard";
 import ApprovedStories from "../../pages/ApprovedStories";
-import logo from '../../assets/images/refugeestories-logo.png';
-import styled from 'styled-components';
-import Icon from '@material-ui/core/Icon';
+import styled from "styled-components";
+import Icon from "@material-ui/core/Icon";
 
+const DashboardLayout = (props) => {
+  const onLogout = () => {
+    localStorage.clear();
+    props.history.replace("/login");
+  };
 
-const DashboardLayout = props => {
-    const onLogout = () => {
-        localStorage.clear();
-        props.history.replace('/login');
-    };
+  return (
+    <StyledContainer>
+      <div className="side-nav">
+        <div className="site-logo">
+          {/* <img src={logo} alt="Refugee Stories Logo" /> */}
+        </div>
 
-    return (
-        <StyledContainer>
-            <div className='side-nav'>
-                <div className="site-logo">
-                    <img src={logo} alt="Refugee Stories Logo" />
-                </div>
+        <ul>
+          <li>
+            <NavLink exact to="/stories" activeClassName="is-active">
+              <Icon>open_in_new</Icon>
+              <span>Visit Site</span>
+            </NavLink>
+          </li>
 
-                <ul>
-                    <li>
-                        <NavLink exact to="/stories" activeClassName="is-active">
-                            <Icon>open_in_new</Icon>
-                            <span>Visit Site</span>
-                        </NavLink>
-                    </li>
-                    
-                    <li>
-                        <NavLink exact to="/dashboard" activeClassName="is-active">
-                            <Icon>assignment_late_outline</Icon>
-                            <span>Pending Stories</span>
-                        </NavLink>
-                    </li>
+          <li>
+            <NavLink exact to="/dashboard" activeClassName="is-active">
+              <Icon>assignment_late_outline</Icon>
+              <span>Pending Stories</span>
+            </NavLink>
+          </li>
 
-                    <li>
-                        <NavLink exact to="/dashboard/approved-stories" activeClassName="is-active">
-                            <Icon>check_circle</Icon>
-                            <span>Approved Stories</span>
-                        </NavLink>
-                    </li>
+          <li>
+            <NavLink
+              exact
+              to="/dashboard/approved-stories"
+              activeClassName="is-active"
+            >
+              <Icon>check_circle</Icon>
+              <span>Approved Stories</span>
+            </NavLink>
+          </li>
 
-                    <li>
-                        <button className='logout' onClick={onLogout}>
-                            <Icon>exit_to_app</Icon>
-                            <span>Log Out</span>
-                        </button>
-                    </li>
-                </ul>
-            </div>
+          <li>
+            <button className="logout" onClick={onLogout}>
+              <Icon>exit_to_app</Icon>
+              <span>Log Out</span>
+            </button>
+          </li>
+        </ul>
+      </div>
 
-            <PrivateRoute exact path="/dashboard" component={Dashboard} />
-            <PrivateRoute exact path="/dashboard/approved-stories" component={ApprovedStories} />
-        </StyledContainer>
-    );
-}
+      <PrivateRoute exact path="/dashboard" component={Dashboard} />
+      <PrivateRoute
+        exact
+        path="/dashboard/approved-stories"
+        component={ApprovedStories}
+      />
+    </StyledContainer>
+  );
+};
 
 export default DashboardLayout;
 
@@ -96,8 +102,8 @@ const StyledContainer = styled.div`
                 font-weight: 400
                 padding: 10px 0;
                 font-size: 1.6rem;
-                color: ${props => props.theme.black};
-                font-family: ${props => props.theme.bodyFont};
+                color: ${(props) => props.theme.black};
+                font-family: ${(props) => props.theme.bodyFont};
 
                 .MuiIcon-root {
                     margin-top: 5px
@@ -110,11 +116,12 @@ const StyledContainer = styled.div`
 
                 &:hover, &.is-active {
                     font-weight: 600px
-                    color: ${props => props.theme.primaryColor};
+                    color: ${(props) => props.theme.primaryColor};
                 }
 
                 &.is-active {
-                    border-right: 3px solid ${props => props.theme.primaryColor};
+                    border-right: 3px solid ${(props) =>
+                      props.theme.primaryColor};
                 }
             }
 
@@ -131,4 +138,4 @@ const StyledContainer = styled.div`
         color: black;
     }
 
-`
+`;

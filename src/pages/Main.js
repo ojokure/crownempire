@@ -2,9 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import devices from "../utils/devices";
 
+// Home Images
 import trucking from "../assets/images/fast-delivery.png";
 import packaging from "../assets/images/carton-box.png";
 import delivery from "../assets/images/freight.png";
+import twentyfour from "../assets/images/24-hours.png";
+import express from "../assets/images/express.png";
+import customercare from "../assets/images/call-center.png";
+import reliability from "../assets/images/reliability.png";
+import satisfaction from "../assets/images/satisfaction.png";
 
 const Main = () => (
   <MainContainer>
@@ -69,46 +75,97 @@ const Main = () => (
         </div>
       </div>
     </div>
-    <div className="main-about-bottom">
-      <h3> WHY CROWN EMPIRE </h3>
-      <div className="about-cards">
-        <div className="about-card">
+    <div className="main-why">
+      <h3> WHY CROWN EMPIRE ? </h3>
+      <div className="why-cards">
+        <div className="why-card">
           <div className="image">
-            <img src={packaging} alt="packaging" />
+            <img
+              src={express}
+              alt="express"
+              style={{ width: "50%", marginLeft: "60px", objectFit: "contain" }}
+            />
           </div>
           <div className="card-info">
-            <h6>Packaging</h6>
+            <h6>Express Delivery</h6>
             <p>
-              We safely deliver all your heavy and bulky (precious) packages
-              from one area to another. If you have a package and need to
-              deliver it, you can trust us to do it for you in no time.
-            </p>
-          </div>
-        </div>
-        <div className="about-card">
-          <div className="image">
-            <img src={trucking} alt="trucking" />
-          </div>
-          <div className="card-info">
-            <h6>Trucking</h6>
-            <p>
-              We move heavy items like furniture, appliances, building
-              accessories and we do it in the safest and quickest way with our
-              express trucking services all over the United States.
+              It is top priority to us to make sure your freight reaches as
+              quickly as possible to the consumer. Our express delivery services
+              make us one of the best logistics to consider across The United
+              States.
             </p>
           </div>
         </div>
 
-        <div className="about-card">
+        <div className="why-card">
           <div className="image">
-            <img src={delivery} alt="delivery" />
+            <img
+              src={customercare}
+              alt="cutomer care"
+              style={{ width: "50%", marginLeft: "60px", objectFit: "contain" }}
+            />
           </div>
           <div className="card-info">
-            <h6>Delivery</h6>
+            <h6>Customer Care & Support</h6>
             <p>
-              We also deliver items from one place to another. If you wish to
-              send a parcel, you can always rely on our express delivery
-              services.
+              If you have any queries, you can always talk to our customer care
+              and support team 24/7, They'll attend to all your enquiries and
+              need. If you are experiencing a problem with our services, contact
+              us today?
+            </p>
+          </div>
+        </div>
+        <div className="why-card">
+          <div className="image">
+            <img
+              src={reliability}
+              alt="reliability"
+              style={{ width: "50%", marginLeft: "60px", objectFit: "contain" }}
+            />
+          </div>
+          <div className="card-info">
+            <h6>Reliability</h6>
+            <p>
+              We aim to deliver quality services that exceed the expectations of
+              our users. Moreover, we also focus on your freight or package
+              safety because, to us, reliability means a lot. We do not wish to
+              break the trust you put in us.
+            </p>
+          </div>
+        </div>
+        <div className="why-card">
+          <div className="image">
+            <img
+              src={satisfaction}
+              alt="satisfaction"
+              style={{ width: "50%", marginLeft: "60px", objectFit: "contain" }}
+            />
+          </div>
+          <div className="card-info">
+            <h6>Customers satisfaction</h6>
+            <p>
+              To us, happy customers mean the most. Therefore we make sure your
+              parcels reach safely and on time till the very end. If your
+              business keeps going, you’re happy. If you are happy, in turn, we
+              are happy.
+            </p>
+          </div>
+        </div>
+        <div className="why-card">
+          <div className="image">
+            <img
+              src={twentyfour}
+              alt="24/7"
+              style={{ width: "50%", marginLeft: "60px", objectFit: "contain" }}
+            />
+          </div>
+          <div className="card-info">
+            <h6> 24/7 </h6>
+            <p>
+              Whether it be day or night, come rain come shine we at crown
+              empire logistics are ever ready to be at your service to deliver
+              that package or move that heavy duty materials 24 hours 7 days a
+              week
             </p>
           </div>
         </div>
@@ -252,7 +309,7 @@ const MainContainer = styled.div`
 
       img {
         /* border-radius: 6px 6px 0 0; */
-        margin-left: 50px;
+        margin-left: 60px;
         width: 50%;
         height: 11rem;
         /* object-fit: cover; */
@@ -282,6 +339,89 @@ const MainContainer = styled.div`
         padding: 0 2.2rem;
         text-align: center;
         color: #545454;
+        /* margin: 0; */
+        line-height: 1.3;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .main-why {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background: #f2f6f5; */
+    margin: 8.5rem 0;
+    /* padding: 3rem 1rem; */
+
+    h3 {
+      font-size: 4rem;
+      font-weight: bold;
+      text-align: center;
+      /* color: #efefef; */
+      margin: 0;
+      /* text-decoration: underline; */
+    }
+
+    .why-cards {
+      display: flex;
+      justify-content: space-evenly;
+      background: #f2f6f5;
+      padding: 3rem;
+
+      flex-wrap: wrap;
+    }
+
+    .why-card {
+      /* border-radius: 6px;
+      box-shadow: 0 6px 10px #d3d3d3; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      height: 30rem;
+      width: 25rem;
+      margin: 3rem 0.8rem 0 0.8rem;
+
+      @media ${devices.mobile} {
+        width: 30%;
+      }
+
+      .image {
+        width: 100%;
+      }
+      img {
+        /* border-radius: 6px 6px 0 0; */
+        /* margin-left: 50px; */
+        /* width: 50%; */
+        /* height: 11rem; */
+        /* object-fit: cover; */
+        /* @media ${devices.mobile} { */
+          /* height: 13rem; */
+          /* width: 40%; */
+          /* margin-left: 110px; */
+        }
+      }
+      .card-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100%;
+      }
+
+      h6 {
+        margin: 0;
+        font-weight: bold;
+        font-size: 1.9rem;
+      }
+
+      p {
+        font-size: 1.35rem;
+        padding: 0 2.2rem;
+        text-align: center;
+        font-weight: bold;
+        color: grey;
         /* margin: 0; */
         line-height: 1.3;
       }
