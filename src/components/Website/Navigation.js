@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import logo from "../../assets/images/refugeestories-logo.png";
+import logo from "../../assets/images/logo.png";
 
 const Navigation = ({ noheader, ishome }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -54,12 +54,12 @@ const Navigation = ({ noheader, ishome }) => {
         className={isOpen ? "open responsive-nav" : "responsive-nav"}
         onClick={toggleNav}
       >
+        {/* <span></span>
         <span></span>
         <span></span>
         <span></span>
         <span></span>
-        <span></span>
-        <span></span>
+        <span></span> */}
       </button>
     </StyledNavigation>
   );

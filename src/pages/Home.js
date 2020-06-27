@@ -13,11 +13,11 @@ import Footer from "../components/Website/Footer";
 import Main from "../pages/Main";
 
 const Home = ({ getUserStories, userStories, userStoriesStatus }) => {
-  const [isLoading, setLoader] = useState(true);
+  // const [isLoading, setLoader] = useState(true);
 
-  useEffect(() => {
-    getUserStories();
-  }, [userStories]); // eslint-disable-line
+  // useEffect(() => {
+  //   getUserStories();
+  // }, [userStories]); // eslint-disable-line
 
   return (
     <ParallaxContainer>
@@ -46,9 +46,6 @@ const Home = ({ getUserStories, userStories, userStoriesStatus }) => {
               <div className="slider-content">
                 <h1>{title}</h1>
                 <p>{story}</p>
-                <Link to="/stories">
-                  {/* See all stories <span>&#62;</span> */}
-                </Link>
               </div>
             </div>
           ))}
