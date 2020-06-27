@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import styled from "styled-components";
 import devices from ".././../utils/devices";
 
@@ -125,7 +125,7 @@ const FooterContainer = styled.div`
   }
 `;
 
-const buttonTheme = {
-  text: "white",
-  background: "#4fad65",
-};
+// const buttonTheme = {
+//   text: "white",
+//   background: "#4fad65",
+// };

@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from "react";
-import { connect } from "react-redux";
-import * as actions from "../state/actions";
-import { toast } from "react-toastify";
+import React from "react";
+// import { connect } from "react-redux";
+// import * as actions from "../state/actions";
+// import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { imageBank } from "../utils/data";
+// import { imageBank } from "../utils/data";
 import Header from "../components/Website/Header";
-import Roller from "../components/LoadingIndicator/roller";
+// import Roller from "../components/LoadingIndicator/roller";
 import box from "../assets/images/box.jpg";
 import Footer from "../components/Website/Footer";
 
