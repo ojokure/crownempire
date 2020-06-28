@@ -1,23 +1,22 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 
+// const useForm = (initialValue) => {
 
-const useForm = (initialValue) => {
+// 	const [visibility, setVisibility] = useState(initialValue);
 
-	const [visibility, setVisibility] = useState(initialValue);
+// 	const handleOpen = () => {
+//         setVisibility(true);
+//     };
 
-	const handleOpen = () => {
-        setVisibility(true);
-    };
+//     const handleClose = () => {
+//         setVisibility(false);
+//     };
 
-    const handleClose = () => {
-        setVisibility(false);
-    };
+// 	return [
+// 		visibility,
+// 		handleOpen,
+// 		handleClose,
+// 	]
+// };
 
-	return [
-		visibility,
-		handleOpen,
-		handleClose,
-	]
-};
-
-export default useForm;
+// export default useForm;

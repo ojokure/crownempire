@@ -20,10 +20,16 @@ const Main = () => (
         <span className="logo"> Crown Empire LLC</span>
       </h2>
       <p className="main-about-intro">
-        Welcome to Crown Empire LCC, one of the most top-notch Logistics
-        companies in the United States. <br /> We serve day and night to provide
-        you with efficient logistic services from town to town, city to city,
-        and state to state in order to meet your requirements. <br />
+        Welcome to Crown Empire LLC, one of the most top-notch Logistics
+        companies in the United States.
+      </p>
+      <p className="main-about-intro">
+        {" "}
+        We serve day and night to provide you with efficient logistic services
+        from town to town, city to city, and state to state in order to meet
+        your requirements.{" "}
+      </p>
+      <p className="main-about-intro">
         We have been providing our Logistic Services for quite some time, and at
         that time, we have gained the trust of our customers because of our
         excellent services.
@@ -83,7 +89,7 @@ const Main = () => (
             <img
               src={express}
               alt="express"
-              style={{ width: "50%", marginLeft: "60px", objectFit: "contain" }}
+              style={{ width: "50%", objectFit: "contain" }}
             />
           </div>
           <div className="card-info">
@@ -102,7 +108,7 @@ const Main = () => (
             <img
               src={customercare}
               alt="cutomer care"
-              style={{ width: "50%", marginLeft: "60px", objectFit: "contain" }}
+              style={{ width: "50%", objectFit: "contain" }}
             />
           </div>
           <div className="card-info">
@@ -120,7 +126,7 @@ const Main = () => (
             <img
               src={reliability}
               alt="reliability"
-              style={{ width: "50%", marginLeft: "60px", objectFit: "contain" }}
+              style={{ width: "50%", objectFit: "contain" }}
             />
           </div>
           <div className="card-info">
@@ -138,7 +144,7 @@ const Main = () => (
             <img
               src={satisfaction}
               alt="satisfaction"
-              style={{ width: "50%", marginLeft: "60px", objectFit: "contain" }}
+              style={{ width: "50%", objectFit: "contain" }}
             />
           </div>
           <div className="card-info">
@@ -156,7 +162,7 @@ const Main = () => (
             <img
               src={twentyfour}
               alt="24/7"
-              style={{ width: "50%", marginLeft: "60px", objectFit: "contain" }}
+              style={{ width: "50%", objectFit: "contain" }}
             />
           </div>
           <div className="card-info">
@@ -173,7 +179,7 @@ const Main = () => (
     </div>
 
     <div className="user-stories-container">
-      <h2 className="user-stories-title"> CUSTOMERS REVIEW </h2>
+      <h3 className="user-stories-title"> CUSTOMERS REVIEW </h3>
 
       <div className="user-stories">
         <div className="user-story">
@@ -228,11 +234,14 @@ const Main = () => (
 
 export default Main;
 
-const MainContainer = styled.div`
-  max-width: 100%;
+const MainContainer = styled.main`
+  min-height: 100vh;
+  transform: translateZ(0);
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  margin-top: 10rem;
+  max-width: 100%;
+  /* padding-top: 7rem; */
 
   .main-about-top {
     display: flex;
@@ -241,6 +250,9 @@ const MainContainer = styled.div`
     justify-content: space-between;
     padding: 0 2rem;
     text-align: center;
+    background: #f2f6f5;
+    padding-top: 7rem;
+    padding-bottom: 2rem;
   }
 
   .main-about-title {
@@ -253,15 +265,17 @@ const MainContainer = styled.div`
 
   .main-about-intro {
     text-align: center;
-    font-size: 2.6rem;
+    font-size: 3rem;
     line-height: 1.3;
     color: #545454;
     font-weight: bold;
-    max-width: 60rem;
+    padding-bottom: 2rem;
+    max-width: 90rem;
+    font-family: "Pangolin", cursive;
   }
 
   .logo {
-    color: gold;
+    color: silver;
   }
 
   .main-about-bottom {
@@ -305,18 +319,19 @@ const MainContainer = styled.div`
 
       .image {
         width: 100%;
+        text-align: center;
       }
 
       img {
         /* border-radius: 6px 6px 0 0; */
-        margin-left: 60px;
+        /* margin-left: 60px; */
         width: 50%;
         height: 11rem;
         /* object-fit: cover; */
         @media ${devices.mobile} {
           height: 13rem;
-          width: 40%;
-          margin-left: 110px;
+          width: 50%;
+          /* margin-left: 110px; */
         }
       }
 
@@ -357,7 +372,7 @@ const MainContainer = styled.div`
     font-weight: bold;
 
     h3 {
-      font-size: 4.5rem;
+      font-size: 4rem;
       font-weight: bold;
       text-align: center;
       /* color: #efefef; */
@@ -387,11 +402,12 @@ const MainContainer = styled.div`
       margin: 3rem 0.8rem 0 0.8rem;
 
       @media ${devices.mobile} {
-        width: 30%;
+        width: 80%;
       }
 
       .image {
         width: 100%;
+        text-align: center;
       }
       img {
         /* border-radius: 6px 6px 0 0; */
@@ -402,7 +418,7 @@ const MainContainer = styled.div`
         @media ${devices.mobile} {
           height: 13rem;
           width: 40%;
-          margin-left: 110px;
+          /* margin-left: 100px; */
         }
       }
       .card-info {
@@ -438,7 +454,7 @@ const MainContainer = styled.div`
     align-items: center;
     justify-content: center;
 
-    h2 {
+    h3 {
       font-weight: bold;
       font-size: 4rem;
       margin-bottom: 4rem;

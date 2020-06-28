@@ -17,7 +17,7 @@ const Footer = () => (
       <div className="footer-content footer-icons">
         <div className="footer-icon">
           <i className="fa fa-phone-square"></i>
-          <div>3018612040</div>
+          <div> (301)-861-2040</div>
         </div>
         <div className="footer-icon">
           <i className="fa fa-envelope"></i>{" "}
