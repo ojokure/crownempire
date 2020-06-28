@@ -45,38 +45,6 @@ const Home = ({ getUserStories, userStories, userStoriesStatus }) => {
           ))}
         </Slider>
       </header>
-      {/* <main> */}
-      {/* <section className="blog-section">
-          <div className="statistics">
-            <div>
-              <p className="stats">71 million </p>
-              <p className="stats-summary">
-                people have been displaced from their home due to war,
-                persecution or violence. That’s one of every 107 people on the
-                planet.
-              </p>
-            </div>
-          </div>
-          <div className="recent-posts">
-            {!userStoriesStatus && isLoading ? (
-              <div className="loading-indicator">
-                <Roller isSiteWide={true} />
-              </div>
-            ) : (
-              <ul>
-                {userStories.slice(0, 3).map(({ id, title, story }) => {
-                  return (
-                    <li key={id}>
-                      <h3>{title}</h3>
-                      <p>{`${story.split(" ").splice(0, 13).join(" ")}...`}</p>
-                    </li>
-                  );
-                })}
-              </ul>
-            )}
-          </div>
-        </section> */}
-      {/* </main> */}
       <Main />
       <Footer />
     </ParallaxContainer>
@@ -157,7 +125,6 @@ const ParallaxContainer = styled.div`
       h1 {
         font-size: 7rem;
         margin-bottom: 1rem;
-
         @media (max-width: 768px) {
           font-size: 4rem;
         }
@@ -168,6 +135,7 @@ const ParallaxContainer = styled.div`
         max-width: 600px;
         line-height: 1.58;
         width: 100%;
+        font-family: "Pangolin", cursive;
 
         @media (max-width: 768px) {
           font-size: 1.7rem;
