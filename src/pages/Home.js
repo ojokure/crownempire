@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 // import { Link } from "react-router-dom";
-import { connect } from "react-redux";
+// import { connect } from "react-redux";
 // import * as actions from "../state/actions";
 // import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

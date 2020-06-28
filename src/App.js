@@ -1,6 +1,6 @@
 import React from "react";
-import store from "./state/store";
-import { Provider } from "react-redux";
+// import store from "./state/store";
+// import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 import { theme } from "./styles/theme.styles";
 import { GlobalStyles } from "./styles/global.styles";
