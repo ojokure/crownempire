@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 // import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import * as actions from "../state/actions";
+// import * as actions from "../state/actions";
 // import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { slides } from "../utils/data";
@@ -13,12 +13,6 @@ import Footer from "../components/Website/Footer";
 import Main from "../pages/Main";
 
 const Home = ({ getUserStories, userStories, userStoriesStatus }) => {
-  // const [isLoading, setLoader] = useState(true);
-
-  // useEffect(() => {
-  //   getUserStories();
-  // }, [userStories]); // eslint-disable-line
-
   return (
     <ParallaxContainer>
       <header className="is-home-page">
@@ -51,8 +45,8 @@ const Home = ({ getUserStories, userStories, userStoriesStatus }) => {
           ))}
         </Slider>
       </header>
-      <main>
-        {/* <section className="blog-section">
+      {/* <main> */}
+      {/* <section className="blog-section">
           <div className="statistics">
             <div>
               <p className="stats">71 million </p>
@@ -82,14 +76,14 @@ const Home = ({ getUserStories, userStories, userStoriesStatus }) => {
             )}
           </div>
         </section> */}
-      </main>
+      {/* </main> */}
       <Main />
       <Footer />
     </ParallaxContainer>
   );
 };
 
-export default connect((state) => state, actions)(Home);
+export default Home;
 
 const ParallaxContainer = styled.div`
   height: 100vh;

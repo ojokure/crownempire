@@ -20,7 +20,7 @@ const Main = () => (
         <span className="logo"> Crown Empire LLC</span>
       </h2>
       <p className="main-about-intro">
-        Welcome to Crown Empire LCC, one of the most top-notch Logistics
+        Welcome to Crown Empire LLC, one of the most top-notch Logistics
         companies in the United States. <br /> We serve day and night to provide
         you with efficient logistic services from town to town, city to city,
         and state to state in order to meet your requirements. <br />
@@ -230,6 +230,7 @@ export default Main;
 
 const MainContainer = styled.div`
   max-width: 100%;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   margin-top: 10rem;
@@ -261,7 +262,7 @@ const MainContainer = styled.div`
   }
 
   .logo {
-    color: gold;
+    color: silver;
   }
 
   .main-about-bottom {
@@ -387,7 +388,7 @@ const MainContainer = styled.div`
       margin: 3rem 0.8rem 0 0.8rem;
 
       @media ${devices.mobile} {
-        width: 30%;
+        width: 80%;
       }
 
       .image {

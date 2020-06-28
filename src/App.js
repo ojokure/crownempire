@@ -12,19 +12,19 @@ import WebsiteRouter from "./components/Router/WebsiteRouter";
 
 const App = () => {
   return (
-    <Provider store={store}>
-      <BrowserRouter>
-        <ThemeProvider theme={theme}>
-          <GlobalStyles />
+    // <Provider>
+    <BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
 
-          <WebsiteRouter />
-          {/* <OnboardingRouter /> */}
-          {/* <DashboardRouter /> */}
+        <WebsiteRouter />
+        {/* <OnboardingRouter /> */}
+        {/* <DashboardRouter /> */}
 
-          <ToastContainer />
-        </ThemeProvider>
-      </BrowserRouter>
-    </Provider>
+        <ToastContainer />
+      </ThemeProvider>
+    </BrowserRouter>
+    // </Provider>
   );
 };
 
