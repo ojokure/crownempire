@@ -89,7 +89,7 @@ const Main = () => (
             <img
               src={express}
               alt="express"
-              style={{ width: "50%", marginLeft: "60px", objectFit: "contain" }}
+              style={{ width: "50%", objectFit: "contain" }}
             />
           </div>
           <div className="card-info">
@@ -108,7 +108,7 @@ const Main = () => (
             <img
               src={customercare}
               alt="cutomer care"
-              style={{ width: "50%", marginLeft: "60px", objectFit: "contain" }}
+              style={{ width: "50%", objectFit: "contain" }}
             />
           </div>
           <div className="card-info">
@@ -126,7 +126,7 @@ const Main = () => (
             <img
               src={reliability}
               alt="reliability"
-              style={{ width: "50%", marginLeft: "60px", objectFit: "contain" }}
+              style={{ width: "50%", objectFit: "contain" }}
             />
           </div>
           <div className="card-info">
@@ -144,7 +144,7 @@ const Main = () => (
             <img
               src={satisfaction}
               alt="satisfaction"
-              style={{ width: "50%", marginLeft: "60px", objectFit: "contain" }}
+              style={{ width: "50%", objectFit: "contain" }}
             />
           </div>
           <div className="card-info">
@@ -162,7 +162,7 @@ const Main = () => (
             <img
               src={twentyfour}
               alt="24/7"
-              style={{ width: "50%", marginLeft: "60px", objectFit: "contain" }}
+              style={{ width: "50%", objectFit: "contain" }}
             />
           </div>
           <div className="card-info">
@@ -319,18 +319,19 @@ const MainContainer = styled.main`
 
       .image {
         width: 100%;
+        text-align: center;
       }
 
       img {
         /* border-radius: 6px 6px 0 0; */
-        margin-left: 60px;
+        /* margin-left: 60px; */
         width: 50%;
         height: 11rem;
         /* object-fit: cover; */
         @media ${devices.mobile} {
           height: 13rem;
-          width: 40%;
-          margin-left: 110px;
+          width: 50%;
+          /* margin-left: 110px; */
         }
       }
 
@@ -406,6 +407,7 @@ const MainContainer = styled.main`
 
       .image {
         width: 100%;
+        text-align: center;
       }
       img {
         /* border-radius: 6px 6px 0 0; */
@@ -416,7 +418,7 @@ const MainContainer = styled.main`
         @media ${devices.mobile} {
           height: 13rem;
           width: 40%;
-          margin-left: 100px;
+          /* margin-left: 100px; */
         }
       }
       .card-info {
