@@ -241,6 +241,8 @@ const MainContainer = styled.main`
   display: flex;
   flex-direction: column;
   max-width: 100%;
+  /* opacity: 0.6; */
+  /* background: darkgray; */
   /* padding-top: 7rem; */
 
   .main-about-top {
@@ -253,6 +255,8 @@ const MainContainer = styled.main`
     background: #f2f6f5;
     padding-top: 7rem;
     padding-bottom: 2rem;
+    /* opacity: 0.6;
+    /* background: darkgray; */
   }
 
   .main-about-title {
@@ -272,6 +276,9 @@ const MainContainer = styled.main`
     padding-bottom: 2rem;
     max-width: 90rem;
     font-family: "Pangolin", cursive;
+    /* color: white; */
+    /* opacity: 0.6; */
+    /* background: darkgray; */
   }
 
   .logo {
@@ -283,6 +290,8 @@ const MainContainer = styled.main`
     flex-direction: column;
     justify-content: center;
     /* background: #f2f6f5; */
+    /* background: darkgray; */
+    /* color: white; */
     margin: 8.5rem 0;
     padding: 3rem 1rem;
 
@@ -299,11 +308,12 @@ const MainContainer = styled.main`
       display: flex;
       justify-content: space-evenly;
       flex-wrap: wrap;
+      /* background: darkgray; */
     }
 
     .about-card {
       border-radius: 6px;
-      box-shadow: 0 6px 10px #d3d3d3;
+      box-shadow: 0 8px 10px #d3d3d3;
       /* background: #efefef; */
       display: flex;
       flex-direction: column;
@@ -370,12 +380,12 @@ const MainContainer = styled.main`
     margin-bottom: 70px;
     padding: 3rem 1rem;
     font-weight: bold;
+    /* background: darkgray; */
 
     h3 {
       font-size: 4rem;
       font-weight: bold;
       text-align: center;
-      /* color: #efefef; */
       margin: 0;
       margin-bottom: 2rem;
       /* text-decoration: underline; */
@@ -386,6 +396,7 @@ const MainContainer = styled.main`
       justify-content: space-evenly;
       background: #f2f6f5;
       padding: 3rem;
+      /* background: darkgray; */
 
       flex-wrap: wrap;
     }
@@ -393,6 +404,7 @@ const MainContainer = styled.main`
     .why-card {
       /* border-radius: 6px;
       box-shadow: 0 6px 10px #d3d3d3; */
+
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -433,6 +445,7 @@ const MainContainer = styled.main`
         margin: 0;
         font-weight: bold;
         font-size: 1.9rem;
+        /* color: white; */
       }
 
       p {
@@ -453,10 +466,11 @@ const MainContainer = styled.main`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* background: darkgray; */
 
     h3 {
       font-weight: bold;
-      font-size: 4rem;
+      font-size: 3rem;
       margin-bottom: 4rem;
       max-width: 60rem;
       padding: 0 2rem;
