@@ -38,7 +38,9 @@ export default Footer;
 
 const FooterContainer = styled.div`
   width: 100%;
-  background: #292d38;
+  /* background: #292d38; */
+  background: #65617d;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;

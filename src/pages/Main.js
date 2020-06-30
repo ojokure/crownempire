@@ -11,29 +11,61 @@ import express from "../assets/images/express.png";
 import customercare from "../assets/images/call-center.png";
 import reliability from "../assets/images/reliability.png";
 import satisfaction from "../assets/images/satisfaction.png";
+import logistics from "../assets/images/logistics.png";
+import logistics2 from "../assets/images/logistics2.png";
 
 const Main = () => (
   <MainContainer>
     <div className="main-about-top">
-      <h2 className="main-about-title">
-        Client satisfaction is the most important to us.
-        <span className="logo"> Crown Empire LLC</span>
-      </h2>
-      <p className="main-about-intro">
-        Welcome to Crown Empire LLC, one of the most top-notch Logistics
-        companies in the United States.
-      </p>
-      <p className="main-about-intro">
-        {" "}
-        We serve day and night to provide you with efficient logistic services
-        from town to town, city to city, and state to state in order to meet
-        your requirements.{" "}
-      </p>
-      <p className="main-about-intro">
-        We have been providing our Logistic Services for quite some time, and at
-        that time, we have gained the trust of our customers because of our
-        excellent services.
-      </p>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          width: "100%",
+          height: "100%",
+          textAlign: "center",
+          justifyContent: "center",
+          marginLeft: "100px",
+        }}
+      >
+        <h2 className="main-about-title">
+          Client satisfaction is the most important to us.
+          <span className="logo"> Crown Empire LLC</span>
+        </h2>
+        <p className="main-about-intro">
+          Welcome to Crown Empire LLC, one of the most top-notch Logistics
+          companies in the United States.
+        </p>
+        <p className="main-about-intro">
+          We serve day and night to provide you with efficient logistic services
+          from town to town, city to city, and state to state in order to meet
+          your requirements.
+        </p>
+        <p className="main-about-intro">
+          We have been providing our Logistic Services for quite some time, and
+          at that time, we have gained the trust of our customers because of our
+          excellent services.
+        </p>
+      </div>
+      <div
+        style={{
+          width: "130%",
+          height: "120%",
+          textAlign: "center",
+          padding: "0px",
+          margin: "0px",
+        }}
+      >
+        <img
+          src={logistics2}
+          alt="logistics"
+          style={{
+            width: "100%",
+            height: "100%",
+            textAlign: "center",
+          }}
+        />
+      </div>
     </div>
 
     <div className="main-about-bottom">
@@ -89,7 +121,7 @@ const Main = () => (
             <img
               src={express}
               alt="express"
-              style={{ width: "50%", objectFit: "contain" }}
+              style={{ width: "35%", objectFit: "contain" }}
             />
           </div>
           <div className="card-info">
@@ -108,7 +140,7 @@ const Main = () => (
             <img
               src={customercare}
               alt="cutomer care"
-              style={{ width: "50%", objectFit: "contain" }}
+              style={{ width: "35%", objectFit: "contain" }}
             />
           </div>
           <div className="card-info">
@@ -126,7 +158,7 @@ const Main = () => (
             <img
               src={reliability}
               alt="reliability"
-              style={{ width: "50%", objectFit: "contain" }}
+              style={{ width: "35%", objectFit: "contain" }}
             />
           </div>
           <div className="card-info">
@@ -144,7 +176,7 @@ const Main = () => (
             <img
               src={satisfaction}
               alt="satisfaction"
-              style={{ width: "50%", objectFit: "contain" }}
+              style={{ width: "35%", objectFit: "contain" }}
             />
           </div>
           <div className="card-info">
@@ -162,7 +194,7 @@ const Main = () => (
             <img
               src={twentyfour}
               alt="24/7"
-              style={{ width: "50%", objectFit: "contain" }}
+              style={{ width: "35%", objectFit: "contain" }}
             />
           </div>
           <div className="card-info">
@@ -247,20 +279,21 @@ const MainContainer = styled.main`
 
   .main-about-top {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 2rem;
     text-align: center;
-    background: #f2f6f5;
+    /* background: #f2f6f5; */
+    /* background: #0097cd; */
     padding-top: 7rem;
     padding-bottom: 2rem;
-    /* opacity: 0.6;
+    /* opacity: 0.6; */
     /* background: darkgray; */
   }
 
   .main-about-title {
-    color: #141414;
+    /* color: #141414; */
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 2rem;
@@ -269,14 +302,16 @@ const MainContainer = styled.main`
 
   .main-about-intro {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.3rem;
     line-height: 1.3;
-    color: #545454;
+    /* color: #545454; */
+    /* color: white; */
+
     font-weight: bold;
     padding-bottom: 2rem;
     max-width: 90rem;
-    font-family: "Pangolin", cursive;
-    /* color: white; */
+    font-family: "Lateef", cursive;
+    color: #3f3d56;
     /* opacity: 0.6; */
     /* background: darkgray; */
   }
@@ -300,6 +335,8 @@ const MainContainer = styled.main`
       font-weight: bold;
       text-align: center;
       /* color: #efefef; */
+      color: #3f3d56;
+
       margin: 0;
       /* text-decoration: underline; */
     }
@@ -360,13 +397,14 @@ const MainContainer = styled.main`
       }
 
       p {
-        font-size: 1.35rem;
-        padding: 0 2.2rem;
+        font-size: 1.6rem;
+        padding: 0 1.8rem;
         text-align: center;
-        color: #545454;
+        color: #3f3d56;
         /* margin: 0; */
-        line-height: 1.3;
+        /* line-height: 1.3; */
         font-weight: bold;
+        font-family: "Lateef", cursive;
       }
     }
   }
@@ -375,7 +413,9 @@ const MainContainer = styled.main`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* background: #f2f6f5; */
+    background: #f2f6f5;
+    /* background: #65617d; */
+
     margin: 4.5rem 0;
     margin-bottom: 70px;
     padding: 3rem 1rem;
@@ -383,11 +423,11 @@ const MainContainer = styled.main`
     /* background: darkgray; */
 
     h3 {
-      font-size: 4rem;
+      font-size: 5rem;
       font-weight: bold;
       text-align: center;
+      color: #3f3d56;
       margin: 0;
-      margin-bottom: 2rem;
       /* text-decoration: underline; */
     }
 
@@ -395,8 +435,9 @@ const MainContainer = styled.main`
       display: flex;
       justify-content: space-evenly;
       background: #f2f6f5;
+      /* background: #65617d; */
+      margin-top: 0;
       padding: 3rem;
-      /* background: darkgray; */
 
       flex-wrap: wrap;
     }
@@ -429,7 +470,7 @@ const MainContainer = styled.main`
         /* object-fit: cover; */
         @media ${devices.mobile} {
           height: 13rem;
-          width: 40%;
+          width: 20%;
           /* margin-left: 100px; */
         }
       }
@@ -449,13 +490,14 @@ const MainContainer = styled.main`
       }
 
       p {
-        font-size: 1.35rem;
-        padding: 0 2.2rem;
+        font-size: 1.75rem;
+        padding: 0 2rem;
         text-align: center;
         font-weight: bold;
-        color: grey;
+        color: #3f3d56;
         /* margin: 0; */
         line-height: 1.3;
+        font-family: "Lateef", cursive;
       }
     }
   }
@@ -470,13 +512,13 @@ const MainContainer = styled.main`
 
     h3 {
       font-weight: bold;
-      font-size: 3rem;
+      font-size: 3.4rem;
       margin-bottom: 4rem;
       max-width: 60rem;
       padding: 0 2rem;
       text-align: center;
       line-height: 1.3;
-      color: #141414;
+      color: #3f3d56;
 
       @media ${devices.tablet} {
         margin-bottom: 2.5rem;
@@ -501,9 +543,10 @@ const MainContainer = styled.main`
 
       p {
         /* line-height: 2; */
-        font-size: 1.45rem;
-        color: #545454;
+        font-size: 1.9rem;
+        color: #3f3d56;
         font-weight: bold;
+        font-family: "Lateef", cursive;
 
         @media ${devices.tablet} {
           text-align: center;
