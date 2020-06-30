@@ -18,15 +18,16 @@ const Main = () => (
   <MainContainer>
     <div className="main-about-top">
       <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          width: "100%",
-          height: "100%",
-          textAlign: "center",
-          justifyContent: "center",
-          marginLeft: "100px",
-        }}
+        className="main-about-top-content"
+        // style={{
+        //   display: "flex",
+        //   flexDirection: "column",
+        //   width: "100%",
+        //   height: "100%",
+        //   textAlign: "center",
+        //   justifyContent: "center",
+        //   marginLeft: "100px",
+        // }}
       >
         <h2 className="main-about-title">
           Client satisfaction is the most important to us.
@@ -48,13 +49,14 @@ const Main = () => (
         </p>
       </div>
       <div
-        style={{
-          width: "130%",
-          height: "120%",
-          textAlign: "center",
-          padding: "0px",
-          margin: "0px",
-        }}
+        className="main-about-image-div"
+        // style={{
+        //   width: "130%",
+        //   height: "120%",
+        //   textAlign: "center",
+        //   padding: "0px",
+        //   margin: "0px",
+        // }}
       >
         <img
           src={logistics2}
@@ -106,8 +108,8 @@ const Main = () => (
             <h6>Delivery</h6>
             <p>
               We also deliver items from one place to another. If you wish to
-              send a parcel, you can always rely on our express delivery
-              services.
+              send a parcel of any kind light or heavy, you can always rely on
+              our express delivery services.
             </p>
           </div>
         </div>
@@ -290,6 +292,31 @@ const MainContainer = styled.main`
     padding-bottom: 2rem;
     /* opacity: 0.6; */
     /* background: darkgray; */
+
+    .main-about-top-content {
+      display: flex;
+      flex-direction: column;
+      width: 100;
+      height: 100%;
+      text-align: center;
+      justify-content: center;
+      margin-left: 100px;
+      @media ${devices.tablet} {
+        margin-left: 0px;
+      }
+    }
+
+    .main-about-image-div {
+      width: 130%;
+      height: 120%;
+      text-align: center;
+      padding: 0px;
+      margin: 0px;
+
+      @media ${devices.tablet} {
+        display: none;
+      }
+    }
   }
 
   .main-about-title {
@@ -327,7 +354,7 @@ const MainContainer = styled.main`
     /* background: #f2f6f5; */
     /* background: darkgray; */
     /* color: white; */
-    margin: 8.5rem 0;
+    /* margin: 8.5rem 0; */
     padding: 3rem 1rem;
 
     h3 {
@@ -356,8 +383,8 @@ const MainContainer = styled.main`
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      height: 26rem;
-      width: 25rem;
+      height: 29rem;
+      width: 27rem;
       margin: 3rem 0.8rem 0 0.8rem;
 
       @media ${devices.mobile} {
@@ -373,7 +400,7 @@ const MainContainer = styled.main`
         /* border-radius: 6px 6px 0 0; */
         /* margin-left: 60px; */
         width: 50%;
-        height: 11rem;
+        height: 12rem;
         /* object-fit: cover; */
         @media ${devices.mobile} {
           height: 13rem;
@@ -397,7 +424,7 @@ const MainContainer = styled.main`
       }
 
       p {
-        font-size: 1.6rem;
+        font-size: 1.75rem;
         padding: 0 1.8rem;
         text-align: center;
         color: #3f3d56;
