@@ -38,8 +38,9 @@ export default Footer;
 
 const FooterContainer = styled.div`
   width: 100%;
-  /* background: #292d38; */
-  background: #65617d;
+  background: #292d38;
+  /* background: #65617d; */
+  /* background: #6c63ff; */
 
   display: flex;
   flex-direction: column;
@@ -100,8 +101,8 @@ const FooterContainer = styled.div`
   }
 
   .footer-copyright {
-    /* font-weight: bold; */
-    font-size: 1.2rem;
+    font-weight: bold;
+    font-size: 1.4rem;
     color: white;
   }
 
@@ -109,10 +110,10 @@ const FooterContainer = styled.div`
     /* display: flex; */
     /* flex-direction: row; */
     /* justify-content: space-around; */
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin: 25px;
     color: white;
-    /* font-weight: bold; */
+    font-weight: bold;
 
     .fa {
       font-size: 2.2rem;
@@ -121,7 +122,7 @@ const FooterContainer = styled.div`
   }
 
   .footer-address {
-    /* font-weight: bold; */
+    font-weight: bold;
     font-size: 1.6rem;
     color: white;
   }

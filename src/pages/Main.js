@@ -442,7 +442,7 @@ const MainContainer = styled.main`
     justify-content: center;
     background: #f2f6f5;
     /* background: #65617d; */
-
+    border-radius: 40% 0 0 80%;
     margin: 4.5rem 0;
     margin-bottom: 70px;
     padding: 3rem 1rem;
