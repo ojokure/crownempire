@@ -233,7 +233,7 @@ const StyledContent = styled.div`
     line-height: 1.3;
 
     @media ${devices.mobile} {
-      /* text-align: center; */
+      text-align: center;
       max-width: 350px;
     }
   }
