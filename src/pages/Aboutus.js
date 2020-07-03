@@ -7,6 +7,7 @@ import Header from "../components/Website/Header";
 // import trk3 from "../assets/images/trk3.jpg";
 import Footer from "../components/Website/Footer";
 import ceo from "../assets/images/ceo.jpg";
+import devices from "../utils/devices";
 
 const Aboutus = () => {
   return (
@@ -14,7 +15,9 @@ const Aboutus = () => {
       <Header height="70vh" />
       <StyledContainer>
         <StyledAbout>
-          <h2>From our CEO </h2>
+          <h3 style={{ paddingBottom: "25px", color: "#3f3d56" }}>
+            From our CEO{" "}
+          </h3>
 
           <div className="about-card">
             <div className="card-image"></div>
@@ -26,12 +29,11 @@ const Aboutus = () => {
           </div>
         </StyledAbout>
         <StyledContent>
+          <h2> OUR MISSION </h2>
+
           <p>
-            <div>
-              <h2> OUR MISSION </h2>
-              We believe that if our customers thrive, we thrive. For this
-              reason, we cherish serving our clients in the best way possible.{" "}
-            </div>
+            We believe that if our customers thrive, we thrive. For this reason,
+            we cherish serving our clients in the best way possible.{" "}
             <p>
               Crown Empire LLC is dedicated to bringing quality and express
               logistic services all across the United States.
@@ -43,17 +45,15 @@ const Aboutus = () => {
             ourselves to be a better company not only for the community but also
             for our employees.
           </p>
-          <p>
+          {/* <p>
             Whether it is moving a simple package that needs to be taken across
             town or meeting a complicated deadline in another state, you can
             trust us with your logistics.{" "}
           </p>
-
           <p>
             We take care of your logistics in the most reliable way possible and
             make sure it reaches the final consumer safely and on time.
-          </p>
-
+          </p> */}
           <div>
             <p>
               Our experienced and insured drivers have years of experience in
@@ -80,18 +80,18 @@ const Aboutus = () => {
 
       <StyledCareer>
         <h3> CAREERS </h3>
-        <h5> COME WORK WITH US </h5>
-        <p>
+        {/* <h5> COME WORK WITH US </h5> */}
+        <p
+          style={{ textAlign: "center", fontSize: "2.5rem", color: "#3f3d56" }}
+        >
           Crown Empire LLC is always eager to meet fresh talent who are willing
           to work and grow with us.{" "}
         </p>
         <p>
           We are committed to the development of our employees who deliver
-          consistent quality logistic services to our customers.{" "}
-        </p>
-        <p>
-          do this by training them with the necessary skills, support training,
-          and opportunities that they need in order to be successful.{" "}
+          consistent quality logistic services to our customers. We do this by
+          training them with the necessary skills, support training, and
+          opportunities that they need in order to be successful.{" "}
         </p>{" "}
         <p>
           We provide career opportunities all over the United States. We have a
@@ -100,7 +100,7 @@ const Aboutus = () => {
         </p>{" "}
         <p>
           {" "}
-          Our main targets are drivers who can help us grow from a company to
+          We are looking for drivers who can help us grow from a company to
           industry, without teamwork and efficient employees, We believe a
           company can not stand well.
         </p>
@@ -109,11 +109,20 @@ const Aboutus = () => {
           As a team, we are constantly working to grow our company into one that
           is best for the society as well as its employees. Taking care of our
           efficient and hardworking employees is our top priority. If they are
-          benefitting our company, we benefit them equally. Apply to our
-          logistics company today and grow with the most experienced
-          professionals{" "}
+          benefitting our company, we benefit them equally.
+        </p>{" "}
+        <p
+          style={{ textAlign: "center", fontSize: "2.2rem", color: "#3f3d56" }}
+        >
+          Apply to our logistics company today and grow with the most
+          experienced professionals!{" "}
         </p>
-        <p> To apply, kindly send an email to careers@crownempirellc.com</p>
+        <p style={{ textAlign: "center", fontSize: "2.2rem" }}>
+          {"To apply, kindly send an email with your resume to "}
+          <a className="anchor" href="mailto:careers@crownempirellc.com">
+            careers@crownempirellc.com
+          </a>
+        </p>
       </StyledCareer>
       <Footer />
     </>
@@ -122,6 +131,48 @@ const Aboutus = () => {
 
 export default Aboutus;
 
+const StyledCareer = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-radius: 40% 0 0%;
+  background: #f2f6f5;
+  padding: 7rem;
+  padding-top: 4rem;
+
+  margin-top: 6rem;
+
+  .anchor {
+    font-family: "Lateef", cursive;
+    color: #0097cd;
+  }
+  p {
+    margin: 0;
+    /* margin-bottom: 15.025px; */
+    color: #3f3d56;
+    font-size: 21px;
+    /* color: #707070; */
+    font-weight: 600;
+    line-height: 1.3;
+    font-family: "Lateef", cursive;
+    padding: 0.8em;
+  }
+  h3 {
+    color: #3f3d56;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    /* font-family: "Lateef", cursive; */
+  }
+
+  h5 {
+    color: #3f3d56;
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.5rem;
+    /* font-family: "Lateef", cursive; */
+  }
+`;
 const StyledContainer = styled.div`
   /* margin: 0 auto;
   width: 85vw; */
@@ -132,7 +183,7 @@ const StyledContainer = styled.div`
   align-items: center;
 
   /* text-align: center; */
-  /* padding-top: 25px; */
+  padding-top: 55px;
   padding-left: 60px;
   /* padding-right: 60px;  */
 
@@ -153,6 +204,11 @@ const StyledContainer = styled.div`
     /* margin: 2rem; */
     /* text-align: center; */
   }
+
+  @media ${devices.tablet} {
+    flex-direction: column;
+    padding-left: 0;
+  }
 `;
 
 const StyledContent = styled.div`
@@ -162,26 +218,36 @@ const StyledContent = styled.div`
 
   /* justify-content: center; */
   align-items: center;
-  /* padding-top: 100px; */
+  /* padding-top: 20px; */
   /* height: 80%; */
   width: 60%;
 
   p {
     margin: 0;
     /* margin-bottom: 15.025px; */
-    font-size: 19px;
-    color: #707070;
-    /* font-weight: 400; */
-    /* line-height: 1.9; */
+    font-size: 21px;
+    /* color: #707070; */
+    color: #3f3d56;
+
+    font-weight: 800;
+    line-height: 1.3;
+
+    @media ${devices.mobile} {
+      /* text-align: center; */
+      max-width: 350px;
+    }
   }
-  h3 {
-    color: #707070;
-    font-size: 2.4rem;
+  h2 {
+    color: #3f3d56;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+
     /* font-family: "Lateef", cursive; */
   }
 
   h4 {
-    color: #707070;
+    color: #3f3d56;
     font-size: 2rem;
     font-family: "Lateef", cursive;
   }
@@ -203,8 +269,8 @@ const StyledAbout = styled.div`
   /* justify-content: center; */
   /* width: 100%; */
   align-items: center;
-  /* padding-top: 0;
-  margin-top: 0;  */
+  padding-top: 25px;
+  /* margin-top: 0;  */
 
   .about-cards-container {
     display: flex;
@@ -230,9 +296,9 @@ const StyledAbout = styled.div`
 
   .card-image {
     width: 100%;
-    height: 20rem;
-    /* background: #cdcdcd; */
-    background: #65617d;
+    height: 16rem;
+    background: #7a7a7a;
+    /* background: #65617d; */
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 49%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 49%, 0% 100%);
     border-radius: 6px;
@@ -253,42 +319,14 @@ const StyledAbout = styled.div`
   }
 
   .name {
-    color: #4f5450;
+    color: #3f3d56;
     font-size: 2.2rem;
     margin: 1rem 0;
   }
 
   .position {
     color: #655f69;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin: 0;
-  }
-`;
-
-const StyledCareer = styled.div`
-  /* display: flex;
-  justify-content: center;
-  flex-direction: column; */
-  p {
-    font-size: 2rem;
-    color: #707070;
-
-    /* max-width: 600px; */
-    line-height: 1.58;
-    width: 100%;
-    font-family: "Lateef", cursive;
-  }
-  h3 {
-    color: #707070;
-
-    font-size: 2.4rem;
-    /* font-family: "Lateef", cursive; */
-  }
-
-  h5 {
-    color: #707070;
-
-    font-size: 1.9rem;
-    /* font-family: "Lateef", cursive; */
   }
 `;

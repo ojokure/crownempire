@@ -414,7 +414,8 @@ const MainContainer = styled.main`
       }
 
       p {
-        color: #707070;
+        /* color: #707070; */
+        color: #3f3d56;
 
         font-size: 1.75rem;
         padding: 0 1.8rem;
@@ -504,8 +505,8 @@ const MainContainer = styled.main`
         margin: 0;
         font-weight: bold;
         font-size: 1.9rem;
-        /* color: white; */
-        color: #707070;
+        color: #3f3d56;
+        /* color: #707070; */
       }
 
       p {
@@ -513,8 +514,8 @@ const MainContainer = styled.main`
         padding: 0 2rem;
         text-align: center;
         font-weight: bold;
-        /* color: #3f3d56; */
-        color: #707070;
+        color: #3f3d56;
+        /* color: #707070; */
 
         /* margin: 0; */
         line-height: 1.3;
