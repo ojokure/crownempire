@@ -33,7 +33,7 @@ const Navigation = ({ noheader, ishome }) => {
           </NavLink>
         </li>
         <li onClick={toggleNav}>
-          <NavLink activeClassName="selected" to="/con">
+          <NavLink activeClassName="selected" to="/contact">
             Contact
           </NavLink>
         </li>

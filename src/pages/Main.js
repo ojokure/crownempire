@@ -4,14 +4,12 @@ import devices from "../utils/devices";
 
 // Home Images
 import trucking from "../assets/images/fast-delivery.png";
-import packaging from "../assets/images/carton-box.png";
 import delivery from "../assets/images/freight.png";
 import twentyfour from "../assets/images/24-hours.png";
 import express from "../assets/images/express.png";
 import customercare from "../assets/images/call-center.png";
 import reliability from "../assets/images/reliability.png";
 import satisfaction from "../assets/images/satisfaction.png";
-import logistics from "../assets/images/logistics.png";
 import logistics2 from "../assets/images/logistics2.png";
 
 const Main = () => (
@@ -48,16 +46,7 @@ const Main = () => (
           excellent services.
         </p>
       </div>
-      <div
-        className="main-about-image-div"
-        // style={{
-        //   width: "130%",
-        //   height: "120%",
-        //   textAlign: "center",
-        //   padding: "0px",
-        //   margin: "0px",
-        // }}
-      >
+      <div className="main-about-image-div">
         <img
           src={logistics2}
           alt="logistics"
@@ -73,7 +62,7 @@ const Main = () => (
     <div className="main-about-bottom">
       <h3> SERVICES </h3>
       <div className="about-cards">
-        <div className="about-card">
+        {/* <div className="about-card">
           <div className="image">
             <img src={packaging} alt="packaging" />
           </div>
@@ -85,7 +74,7 @@ const Main = () => (
               deliver it, you can trust us to do it for you in no time.
             </p>
           </div>
-        </div>
+        </div> */}
         <div className="about-card">
           <div className="image">
             <img src={trucking} alt="trucking" />
@@ -105,11 +94,11 @@ const Main = () => (
             <img src={delivery} alt="delivery" />
           </div>
           <div className="card-info">
-            <h6>Delivery</h6>
+            <h6> Cargo/Freight </h6>
             <p>
-              We also deliver items from one place to another. If you wish to
-              send a parcel of any kind light or heavy, you can always rely on
-              our express delivery services.
+              We provide relaible and on-time dry Cargo and Freight delivery. We
+              do it in the safest and quickest way with our express trucking
+              services all over the region in the United States
             </p>
           </div>
         </div>
@@ -421,13 +410,15 @@ const MainContainer = styled.main`
         margin: 0;
         font-weight: bold;
         font-size: 1.9rem;
+        color: #3f3d56;
       }
 
       p {
+        color: #707070;
+
         font-size: 1.75rem;
         padding: 0 1.8rem;
         text-align: center;
-        color: #3f3d56;
         /* margin: 0; */
         /* line-height: 1.3; */
         font-weight: bold;
@@ -441,13 +432,13 @@ const MainContainer = styled.main`
     flex-direction: column;
     justify-content: center;
     background: #f2f6f5;
-    /* background: #65617d; */
+    /* background: #eaf6fc; */
     border-radius: 40% 0 0 80%;
+    /* clip-path: polygon(0px 0px, 100% 0px, 100% 49%, 0% 100%); */
     margin: 4.5rem 0;
     margin-bottom: 70px;
     padding: 3rem 1rem;
     font-weight: bold;
-    /* background: darkgray; */
 
     h3 {
       font-size: 5rem;
@@ -462,7 +453,7 @@ const MainContainer = styled.main`
       display: flex;
       justify-content: space-evenly;
       background: #f2f6f5;
-      /* background: #65617d; */
+      /* background: #eaf6fc; */
       margin-top: 0;
       padding: 3rem;
 
@@ -514,6 +505,7 @@ const MainContainer = styled.main`
         font-weight: bold;
         font-size: 1.9rem;
         /* color: white; */
+        color: #707070;
       }
 
       p {
@@ -521,7 +513,9 @@ const MainContainer = styled.main`
         padding: 0 2rem;
         text-align: center;
         font-weight: bold;
-        color: #3f3d56;
+        /* color: #3f3d56; */
+        color: #707070;
+
         /* margin: 0; */
         line-height: 1.3;
         font-family: "Lateef", cursive;
@@ -605,9 +599,11 @@ const MainContainer = styled.main`
       }
 
       h3 {
+        color: #3f3d56;
+
         font-weight: bold;
         font-size: 1.5rem;
-        color: #141414;
+        /* color: #141414; */
         margin: 0;
       }
     }
