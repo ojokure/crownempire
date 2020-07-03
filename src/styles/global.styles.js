@@ -18,9 +18,9 @@ export const GlobalStyles = createGlobalStyle`
 
     body {
         font-family: Nunito, sans-serif;
-        background: darkgray;
+        /* background: darkgray; */
 
-        /* font-weight: 600; */
+        font-weight: 400;
         overflow-x: hidden;
     }
 

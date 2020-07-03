@@ -19,7 +19,7 @@ const Home = ({ getUserStories, userStories, userStoriesStatus }) => {
         <Navigation ishome />
         <Slider
           options={{
-            autoPlay: 10000,
+            autoPlay: 8000,
             lazyLoad: true,
             pauseAutoPlayOnHover: false,
             wrapAround: true,
@@ -131,11 +131,11 @@ const ParallaxContainer = styled.div`
       }
 
       p {
-        font-size: 1.6rem;
+        font-size: 2.6rem;
         max-width: 600px;
         line-height: 1.58;
         width: 100%;
-        font-family: "Pangolin", cursive;
+        font-family: "Lateef", cursive;
 
         @media (max-width: 768px) {
           font-size: 1.7rem;

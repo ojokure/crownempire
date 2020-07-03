@@ -4,42 +4,65 @@ import devices from "../utils/devices";
 
 // Home Images
 import trucking from "../assets/images/fast-delivery.png";
-import packaging from "../assets/images/carton-box.png";
 import delivery from "../assets/images/freight.png";
 import twentyfour from "../assets/images/24-hours.png";
 import express from "../assets/images/express.png";
 import customercare from "../assets/images/call-center.png";
 import reliability from "../assets/images/reliability.png";
 import satisfaction from "../assets/images/satisfaction.png";
+import logistics2 from "../assets/images/logistics2.png";
 
 const Main = () => (
   <MainContainer>
     <div className="main-about-top">
-      <h2 className="main-about-title">
-        Client satisfaction is the most important to us.
-        <span className="logo"> Crown Empire LLC</span>
-      </h2>
-      <p className="main-about-intro">
-        Welcome to Crown Empire LLC, one of the most top-notch Logistics
-        companies in the United States.
-      </p>
-      <p className="main-about-intro">
-        {" "}
-        We serve day and night to provide you with efficient logistic services
-        from town to town, city to city, and state to state in order to meet
-        your requirements.{" "}
-      </p>
-      <p className="main-about-intro">
-        We have been providing our Logistic Services for quite some time, and at
-        that time, we have gained the trust of our customers because of our
-        excellent services.
-      </p>
+      <div
+        className="main-about-top-content"
+        // style={{
+        //   display: "flex",
+        //   flexDirection: "column",
+        //   width: "100%",
+        //   height: "100%",
+        //   textAlign: "center",
+        //   justifyContent: "center",
+        //   marginLeft: "100px",
+        // }}
+      >
+        <h2 className="main-about-title">
+          Client satisfaction is the most important to us.
+          <span className="logo"> Crown Empire LLC</span>
+        </h2>
+        <p className="main-about-intro">
+          Welcome to Crown Empire LLC, one of the most top-notch Logistics
+          companies in the United States.
+        </p>
+        <p className="main-about-intro">
+          We serve day and night to provide you with efficient logistic services
+          from town to town, city to city, and state to state in order to meet
+          your requirements.
+        </p>
+        <p className="main-about-intro">
+          We have been providing our Logistic Services for quite some time, and
+          at that time, we have gained the trust of our customers because of our
+          excellent services.
+        </p>
+      </div>
+      <div className="main-about-image-div">
+        <img
+          src={logistics2}
+          alt="logistics"
+          style={{
+            width: "100%",
+            height: "100%",
+            textAlign: "center",
+          }}
+        />
+      </div>
     </div>
 
     <div className="main-about-bottom">
       <h3> SERVICES </h3>
       <div className="about-cards">
-        <div className="about-card">
+        {/* <div className="about-card">
           <div className="image">
             <img src={packaging} alt="packaging" />
           </div>
@@ -51,7 +74,7 @@ const Main = () => (
               deliver it, you can trust us to do it for you in no time.
             </p>
           </div>
-        </div>
+        </div> */}
         <div className="about-card">
           <div className="image">
             <img src={trucking} alt="trucking" />
@@ -71,11 +94,11 @@ const Main = () => (
             <img src={delivery} alt="delivery" />
           </div>
           <div className="card-info">
-            <h6>Delivery</h6>
+            <h6> Cargo/Freight </h6>
             <p>
-              We also deliver items from one place to another. If you wish to
-              send a parcel, you can always rely on our express delivery
-              services.
+              We provide relaible and on-time dry Cargo and Freight delivery. We
+              do it in the safest and quickest way with our express trucking
+              services all over the region in the United States
             </p>
           </div>
         </div>
@@ -89,7 +112,7 @@ const Main = () => (
             <img
               src={express}
               alt="express"
-              style={{ width: "50%", objectFit: "contain" }}
+              style={{ width: "35%", objectFit: "contain" }}
             />
           </div>
           <div className="card-info">
@@ -108,7 +131,7 @@ const Main = () => (
             <img
               src={customercare}
               alt="cutomer care"
-              style={{ width: "50%", objectFit: "contain" }}
+              style={{ width: "35%", objectFit: "contain" }}
             />
           </div>
           <div className="card-info">
@@ -126,7 +149,7 @@ const Main = () => (
             <img
               src={reliability}
               alt="reliability"
-              style={{ width: "50%", objectFit: "contain" }}
+              style={{ width: "35%", objectFit: "contain" }}
             />
           </div>
           <div className="card-info">
@@ -144,7 +167,7 @@ const Main = () => (
             <img
               src={satisfaction}
               alt="satisfaction"
-              style={{ width: "50%", objectFit: "contain" }}
+              style={{ width: "35%", objectFit: "contain" }}
             />
           </div>
           <div className="card-info">
@@ -162,7 +185,7 @@ const Main = () => (
             <img
               src={twentyfour}
               alt="24/7"
-              style={{ width: "50%", objectFit: "contain" }}
+              style={{ width: "35%", objectFit: "contain" }}
             />
           </div>
           <div className="card-info">
@@ -247,20 +270,46 @@ const MainContainer = styled.main`
 
   .main-about-top {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 2rem;
     text-align: center;
-    background: #f2f6f5;
+    /* background: #f2f6f5; */
+    /* background: #0097cd; */
     padding-top: 7rem;
     padding-bottom: 2rem;
-    /* opacity: 0.6;
+    /* opacity: 0.6; */
     /* background: darkgray; */
+
+    .main-about-top-content {
+      display: flex;
+      flex-direction: column;
+      width: 100;
+      height: 100%;
+      text-align: center;
+      justify-content: center;
+      margin-left: 100px;
+      @media ${devices.tablet} {
+        margin-left: 0px;
+      }
+    }
+
+    .main-about-image-div {
+      width: 130%;
+      height: 120%;
+      text-align: center;
+      padding: 0px;
+      margin: 0px;
+
+      @media ${devices.tablet} {
+        display: none;
+      }
+    }
   }
 
   .main-about-title {
-    color: #141414;
+    /* color: #141414; */
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 2rem;
@@ -269,14 +318,16 @@ const MainContainer = styled.main`
 
   .main-about-intro {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.3rem;
     line-height: 1.3;
-    color: #545454;
+    /* color: #545454; */
+    /* color: white; */
+
     font-weight: bold;
     padding-bottom: 2rem;
     max-width: 90rem;
-    font-family: "Pangolin", cursive;
-    /* color: white; */
+    font-family: "Lateef", cursive;
+    color: #3f3d56;
     /* opacity: 0.6; */
     /* background: darkgray; */
   }
@@ -292,7 +343,7 @@ const MainContainer = styled.main`
     /* background: #f2f6f5; */
     /* background: darkgray; */
     /* color: white; */
-    margin: 8.5rem 0;
+    /* margin: 8.5rem 0; */
     padding: 3rem 1rem;
 
     h3 {
@@ -300,6 +351,8 @@ const MainContainer = styled.main`
       font-weight: bold;
       text-align: center;
       /* color: #efefef; */
+      color: #3f3d56;
+
       margin: 0;
       /* text-decoration: underline; */
     }
@@ -319,8 +372,8 @@ const MainContainer = styled.main`
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      height: 26rem;
-      width: 25rem;
+      height: 29rem;
+      width: 27rem;
       margin: 3rem 0.8rem 0 0.8rem;
 
       @media ${devices.mobile} {
@@ -336,7 +389,7 @@ const MainContainer = styled.main`
         /* border-radius: 6px 6px 0 0; */
         /* margin-left: 60px; */
         width: 50%;
-        height: 11rem;
+        height: 12rem;
         /* object-fit: cover; */
         @media ${devices.mobile} {
           height: 13rem;
@@ -357,16 +410,19 @@ const MainContainer = styled.main`
         margin: 0;
         font-weight: bold;
         font-size: 1.9rem;
+        color: #3f3d56;
       }
 
       p {
-        font-size: 1.35rem;
-        padding: 0 2.2rem;
+        color: #707070;
+
+        font-size: 1.75rem;
+        padding: 0 1.8rem;
         text-align: center;
-        color: #545454;
         /* margin: 0; */
-        line-height: 1.3;
+        /* line-height: 1.3; */
         font-weight: bold;
+        font-family: "Lateef", cursive;
       }
     }
   }
@@ -375,19 +431,21 @@ const MainContainer = styled.main`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* background: #f2f6f5; */
+    background: #f2f6f5;
+    /* background: #eaf6fc; */
+    border-radius: 40% 0 0 80%;
+    /* clip-path: polygon(0px 0px, 100% 0px, 100% 49%, 0% 100%); */
     margin: 4.5rem 0;
     margin-bottom: 70px;
     padding: 3rem 1rem;
     font-weight: bold;
-    /* background: darkgray; */
 
     h3 {
-      font-size: 4rem;
+      font-size: 5rem;
       font-weight: bold;
       text-align: center;
+      color: #3f3d56;
       margin: 0;
-      margin-bottom: 2rem;
       /* text-decoration: underline; */
     }
 
@@ -395,8 +453,9 @@ const MainContainer = styled.main`
       display: flex;
       justify-content: space-evenly;
       background: #f2f6f5;
+      /* background: #eaf6fc; */
+      margin-top: 0;
       padding: 3rem;
-      /* background: darkgray; */
 
       flex-wrap: wrap;
     }
@@ -429,7 +488,7 @@ const MainContainer = styled.main`
         /* object-fit: cover; */
         @media ${devices.mobile} {
           height: 13rem;
-          width: 40%;
+          width: 20%;
           /* margin-left: 100px; */
         }
       }
@@ -446,16 +505,20 @@ const MainContainer = styled.main`
         font-weight: bold;
         font-size: 1.9rem;
         /* color: white; */
+        color: #707070;
       }
 
       p {
-        font-size: 1.35rem;
-        padding: 0 2.2rem;
+        font-size: 1.75rem;
+        padding: 0 2rem;
         text-align: center;
         font-weight: bold;
-        color: grey;
+        /* color: #3f3d56; */
+        color: #707070;
+
         /* margin: 0; */
         line-height: 1.3;
+        font-family: "Lateef", cursive;
       }
     }
   }
@@ -470,13 +533,13 @@ const MainContainer = styled.main`
 
     h3 {
       font-weight: bold;
-      font-size: 3rem;
+      font-size: 3.4rem;
       margin-bottom: 4rem;
       max-width: 60rem;
       padding: 0 2rem;
       text-align: center;
       line-height: 1.3;
-      color: #141414;
+      color: #3f3d56;
 
       @media ${devices.tablet} {
         margin-bottom: 2.5rem;
@@ -501,9 +564,10 @@ const MainContainer = styled.main`
 
       p {
         /* line-height: 2; */
-        font-size: 1.45rem;
-        color: #545454;
+        font-size: 1.9rem;
+        color: #3f3d56;
         font-weight: bold;
+        font-family: "Lateef", cursive;
 
         @media ${devices.tablet} {
           text-align: center;
@@ -535,9 +599,11 @@ const MainContainer = styled.main`
       }
 
       h3 {
+        color: #3f3d56;
+
         font-weight: bold;
         font-size: 1.5rem;
-        color: #141414;
+        /* color: #141414; */
         margin: 0;
       }
     }

@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import Navigation from "./Navigation";
-import box from "../../assets/images/box4.jpg";
+import headerImage from "../../assets/images/headerImage.jpg";
 
 const Header = ({ image, height, title, story }) => {
   return (
     <StyledHeader height={height}>
       <div className="hero-background">
-        <img src={box} alt="box" />
+        <img src={headerImage} alt="box" />
       </div>
       <div className="hero-content">
         <Navigation />

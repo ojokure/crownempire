@@ -21,7 +21,7 @@ import truck1 from "../assets/images/trk1.jpg";
 export const slides = [
   {
     image: `${truck2}`,
-    title: "Logistic Excellence",
+    title: "Borderless Logistics",
     story:
       "Do you wish to move your freight from one town to another or all over the United States? If YES, then you’ve found the perfect spot.",
   },

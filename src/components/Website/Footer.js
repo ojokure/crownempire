@@ -1,5 +1,4 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import styled from "styled-components";
 import devices from ".././../utils/devices";
 
@@ -38,7 +37,10 @@ export default Footer;
 
 const FooterContainer = styled.div`
   width: 100%;
-  background: #292d38;
+  /* background: #292d38; */
+  background: #65617d;
+  /* background: #6c63ff; */
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -87,8 +89,8 @@ const FooterContainer = styled.div`
     }
 
     .footer-content {
-      width: 15rem;
-      opacity: 0.7;
+      width: 30rem;
+      /* opacity: 0.7; */
 
       @media ${devices.tablet} {
         padding: 0.5rem 0;
@@ -98,19 +100,21 @@ const FooterContainer = styled.div`
   }
 
   .footer-copyright {
-    /* font-weight: bold; */
-    font-size: 1.2rem;
+    font-weight: bold;
+    /* margin-left: 2.5rem; */
+    font-size: 1.4rem;
     color: white;
   }
 
   .footer-icons {
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* justify-content: space-around; */
-    font-size: 1.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 1.3rem;
     margin: 25px;
     color: white;
-    /* font-weight: bold; */
+    font-weight: bold;
 
     .fa {
       font-size: 2.2rem;
@@ -119,13 +123,10 @@ const FooterContainer = styled.div`
   }
 
   .footer-address {
-    /* font-weight: bold; */
+    font-weight: bold;
     font-size: 1.6rem;
+    /* margin-right: 5.8rem; */
+
     color: white;
   }
 `;
-
-// const buttonTheme = {
-//   text: "white",
-//   background: "#4fad65",
-// };
