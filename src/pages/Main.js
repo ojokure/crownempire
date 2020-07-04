@@ -15,18 +15,7 @@ import logistics2 from "../assets/images/logistics2.png";
 const Main = () => (
   <MainContainer>
     <div className="main-about-top">
-      <div
-        className="main-about-top-content"
-        // style={{
-        //   display: "flex",
-        //   flexDirection: "column",
-        //   width: "100%",
-        //   height: "100%",
-        //   textAlign: "center",
-        //   justifyContent: "center",
-        //   marginLeft: "100px",
-        // }}
-      >
+      <div className="main-about-top-content">
         <h2 className="main-about-title">
           Client satisfaction is the most important to us.
           <span className="logo"> Crown Empire LLC</span>
@@ -333,7 +322,7 @@ const MainContainer = styled.main`
   }
 
   .logo {
-    color: silver;
+    color: #daa520;
   }
 
   .main-about-bottom {

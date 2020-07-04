@@ -7,6 +7,7 @@ import Header from "../components/Website/Header";
 // import trk3 from "../assets/images/trk3.jpg";
 import Footer from "../components/Website/Footer";
 import ceo from "../assets/images/ceo.jpg";
+import driver from "../assets/images/driver2.jpg";
 import devices from "../utils/devices";
 
 const Aboutus = () => {
@@ -33,11 +34,12 @@ const Aboutus = () => {
 
           <p>
             We believe that if our customers thrive, we thrive. For this reason,
-            we cherish serving our clients in the best way possible.{" "}
-            <p>
-              Crown Empire LLC is dedicated to bringing quality and express
-              logistic services all across the United States.
-            </p>
+            we cherish serving our clients in the best way possible.
+          </p>
+
+          <p>
+            Crown Empire LLC is dedicated to bringing quality and express
+            logistic services all across the United States.
           </p>
           <p>
             Crown Empire LLC was set up in 2020 with the underlying stage
@@ -45,15 +47,6 @@ const Aboutus = () => {
             ourselves to be a better company not only for the community but also
             for our employees.
           </p>
-          {/* <p>
-            Whether it is moving a simple package that needs to be taken across
-            town or meeting a complicated deadline in another state, you can
-            trust us with your logistics.{" "}
-          </p>
-          <p>
-            We take care of your logistics in the most reliable way possible and
-            make sure it reaches the final consumer safely and on time.
-          </p> */}
           <div>
             <p>
               Our experienced and insured drivers have years of experience in
@@ -77,53 +70,62 @@ const Aboutus = () => {
           town or the state, we're here to take care of it.
         </div> */}
       </StyledAboutBottom>
-
-      <StyledCareer>
+      <CareerConatiner>
         <h3> CAREERS </h3>
-        {/* <h5> COME WORK WITH US </h5> */}
-        <p
-          style={{ textAlign: "center", fontSize: "2.5rem", color: "#3f3d56" }}
-        >
-          Crown Empire LLC is always eager to meet fresh talent who are willing
-          to work and grow with us.{" "}
-        </p>
-        <p>
-          We are committed to the development of our employees who deliver
-          consistent quality logistic services to our customers. We do this by
-          training them with the necessary skills, support training, and
-          opportunities that they need in order to be successful.{" "}
-        </p>{" "}
-        <p>
-          We provide career opportunities all over the United States. We have a
-          developed HR system in every region that encourages the development of
-          our employees in different ways.{" "}
-        </p>{" "}
-        <p>
-          {" "}
-          We are looking for drivers who can help us grow from a company to
-          industry, without teamwork and efficient employees, We believe a
-          company can not stand well.
-        </p>
-        <p>
-          {" "}
-          As a team, we are constantly working to grow our company into one that
-          is best for the society as well as its employees. Taking care of our
-          efficient and hardworking employees is our top priority. If they are
-          benefitting our company, we benefit them equally.
-        </p>{" "}
-        <p
-          style={{ textAlign: "center", fontSize: "2.2rem", color: "#3f3d56" }}
-        >
+        <StyledCareer>
+          <div className="career-content">
+            <h4> COME WORK WITH US </h4>
+            <p className="career-par">
+              We are constantly looking for great minds to join our team and
+              grow with us.{" "}
+            </p>
+            <p className="career-par">
+              We are committed to the development of our employees who deliver
+              consistent quality logistic services to our customers. We value
+              our people as the greatest assets, so we give attention to their
+              welfare, training and development.
+            </p>
+            <p className="career-par">
+              As an organization, we are constantly working to grow our company
+              into one that is best for the society as well as its employees.
+              Taking care of our efficient and hardworking employees is our top
+              priority. If they are benefitting our company, we benefit them
+              equally.
+            </p>
+            <p className="career-par">
+              We don’t just offer jobs. We are welcoming you into a company with
+              a crucial mind-set and an organization that values its employees
+            </p>
+
+            <p className="career-par">
+              We are looking for drivers who can help us grow from a company to
+              industry, without teamwork and efficient employees, We believe a
+              company can not stand well.
+            </p>
+          </div>
+          <div className="career-image-div">
+            <img
+              src={driver}
+              alt="driver"
+              style={{
+                width: "100%",
+                height: "100%",
+                textAlign: "center",
+              }}
+            />
+          </div>
+        </StyledCareer>
+        <p className="career-bottom-par">
           Apply to our logistics company today and grow with the most
-          experienced professionals!{" "}
+          experienced professionals!
         </p>
-        <p style={{ textAlign: "center", fontSize: "2.2rem" }}>
+        <p className="career-bottom-par">
           {"To apply, kindly send an email with your resume to "}
           <a className="anchor" href="mailto:careers@crownempirellc.com">
             careers@crownempirellc.com
           </a>
         </p>
-      </StyledCareer>
+      </CareerConatiner>
       <Footer />
     </>
   );
@@ -131,38 +133,47 @@ const Aboutus = () => {
 
 export default Aboutus;
 
-const StyledCareer = styled.div`
+const CareerConatiner = styled.div`
   display: flex;
-  justify-content: flex-start;
   flex-direction: column;
   border-radius: 40% 0 0%;
   background: #f2f6f5;
-  padding: 7rem;
-  padding-top: 4rem;
-
   margin-top: 6rem;
+  padding: 3rem;
 
-  .anchor {
-    font-family: "Lateef", cursive;
-    color: #0097cd;
-  }
-  p {
+  .career-bottom-par {
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.4;
     margin: 0;
-    /* margin-bottom: 15.025px; */
-    color: #3f3d56;
-    font-size: 21px;
-    /* color: #707070; */
-    font-weight: 600;
-    line-height: 1.3;
+    font-weight: bold;
+    /* max-width: 90rem; */
     font-family: "Lateef", cursive;
-    padding: 0.8em;
+    color: #3f3d56;
   }
+
   h3 {
     color: #3f3d56;
     text-align: center;
     font-size: 4rem;
     font-weight: 600;
     /* font-family: "Lateef", cursive; */
+  }
+
+  .anchor {
+    font-family: "Lateef", cursive;
+    color: #0097cd;
+  }
+`;
+
+const StyledCareer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  /* padding-top: 4rem; */
+
+  @media ${devices.tablet} {
+    flex-direction: column;
   }
 
   h5 {
@@ -172,7 +183,56 @@ const StyledCareer = styled.div`
     font-size: 2.5rem;
     /* font-family: "Lateef", cursive; */
   }
+
+  .career-content {
+    display: flex;
+    flex-direction: column;
+    width: 100;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+    padding-top: 30px;
+
+    h4 {
+      color: #3f3d56;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+    @media ${devices.tablet} {
+      /* max-width: 350px; */
+    }
+  }
+
+  .career-par {
+    /* text-align: center; */
+    font-size: 21px;
+    line-height: 1.3;
+    margin: 0;
+    font-weight: bold;
+    max-width: 120rem;
+    font-family: "Lateef", cursive;
+    color: #3f3d56;
+    padding-bottom: 2rem;
+  }
+  .career-image-div {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 30px;
+    margin: 0px;
+
+    img {
+      border-radius: 8%;
+    }
+
+    @media ${devices.tablet} {
+      /* display: none; */
+    }
+  }
 `;
+
 const StyledContainer = styled.div`
   /* margin: 0 auto;
   width: 85vw; */

@@ -29,7 +29,7 @@ const Navigation = ({ noheader, ishome }) => {
         </li>
         <li onClick={toggleNav}>
           <NavLink activeClassName="selected" to="/about">
-            About us
+            About Us
           </NavLink>
         </li>
         <li onClick={toggleNav}>
