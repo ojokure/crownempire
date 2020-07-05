@@ -75,32 +75,32 @@ const Aboutus = () => {
         <StyledCareer>
           <div className="career-content">
             <h4> COME WORK WITH US </h4>
-            <p className="career-par">
+            <p className="career-par" style={{ textAlign: "center" }}>
               We are constantly looking for great minds to join our team and
               grow with us.{" "}
             </p>
             <p className="career-par">
-              We are committed to the development of our employees who deliver
-              consistent quality logistic services to our customers. We value
-              our people as the greatest assets, so we give attention to their
-              welfare, training and development.
-            </p>
-            <p className="career-par">
               As an organization, we are constantly working to grow our company
-              into one that is best for the society as well as its employees.
+              into one that best satisfies the needs of our customers. And as
+              such we are committed to the development of our employees that
+              deliver consistent quality logistic services to our customers. We
+              value our people as the greatest assets, so we give attention to
+              their welfare, training and development.
+            </p>
+            {/* <p className="career-par">
               Taking care of our efficient and hardworking employees is our top
               priority. If they are benefitting our company, we benefit them
               equally.
-            </p>
+            </p> */}
             <p className="career-par">
               We don’t just offer jobs. We are welcoming you into a company with
-              a crucial mind-set and an organization that values its employees
+              a crucial mind-set and an organization that values its employees.
             </p>
 
             <p className="career-par">
-              We are looking for drivers who can help us grow from a company to
-              industry, without teamwork and efficient employees, We believe a
-              company can not stand well.
+              We are looking for professional drivers with wealth of experience,
+              that can become an integral part of our team and help us grow from
+              a company to industry. Do you think you're a good fit ?
             </p>
           </div>
           <div className="career-image-div">
@@ -155,7 +155,7 @@ const CareerConatiner = styled.div`
   h3 {
     color: #3f3d56;
     text-align: center;
-    font-size: 4rem;
+    font-size: 4.2rem;
     font-weight: 600;
     /* font-family: "Lateef", cursive; */
   }
@@ -170,6 +170,7 @@ const StyledCareer = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  align-content: center;
   /* padding-top: 4rem; */
 
   @media ${devices.tablet} {
@@ -189,15 +190,16 @@ const StyledCareer = styled.div`
     flex-direction: column;
     width: 100;
     height: 100%;
-    text-align: center;
+    /* text-align: center; */
     justify-content: center;
     padding: 30px;
     padding-top: 30px;
 
     h4 {
+      /* font-family: "Lateef", cursive; */
       color: #3f3d56;
       text-align: center;
-      font-size: 2.5rem;
+      font-size: 3rem;
       font-weight: 600;
     }
     @media ${devices.tablet} {
@@ -211,14 +213,14 @@ const StyledCareer = styled.div`
     line-height: 1.3;
     margin: 0;
     font-weight: bold;
-    max-width: 120rem;
+    max-width: 100rem;
     font-family: "Lateef", cursive;
     color: #3f3d56;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
   }
   .career-image-div {
-    width: 100%;
-    height: 100%;
+    max-width: 70%;
+    max-height: 38rem;
     text-align: center;
     padding: 30px;
     margin: 0px;
