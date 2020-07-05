@@ -12,7 +12,7 @@ import Navigation from "../components/Website/Navigation";
 import Footer from "../components/Website/Footer";
 import Main from "../pages/Main";
 
-const Home = ({ getUserStories, userStories, userStoriesStatus }) => {
+const Home = () => {
   return (
     <ParallaxContainer>
       <header className="is-home-page">
@@ -30,15 +30,10 @@ const Home = ({ getUserStories, userStories, userStoriesStatus }) => {
           {slides.map(({ image, title, story }, index) => (
             <div style={{ width: "100%", height: "100%" }} key={index}>
               <div className="slider-image">
-                <img
-                  src={image}
-                  data-flickity-lazyload={image}
-                  alt=""
-                  // style={{ filter: "15%" }}
-                />
+                <img src={image} data-flickity-lazyload={image} alt="" />
               </div>
               <div className="slider-content">
-                <h1>{title}</h1>
+                <h1 style={{ fontFamily: "Lateef" }}>{title}</h1>
                 <p>{story}</p>
               </div>
             </div>

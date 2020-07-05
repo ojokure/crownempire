@@ -15,18 +15,7 @@ import logistics2 from "../assets/images/logistics2.png";
 const Main = () => (
   <MainContainer>
     <div className="main-about-top">
-      <div
-        className="main-about-top-content"
-        // style={{
-        //   display: "flex",
-        //   flexDirection: "column",
-        //   width: "100%",
-        //   height: "100%",
-        //   textAlign: "center",
-        //   justifyContent: "center",
-        //   marginLeft: "100px",
-        // }}
-      >
+      <div className="main-about-top-content">
         <h2 className="main-about-title">
           Client satisfaction is the most important to us.
           <span className="logo"> Crown Empire LLC</span>
@@ -62,29 +51,16 @@ const Main = () => (
     <div className="main-about-bottom">
       <h3> SERVICES </h3>
       <div className="about-cards">
-        {/* <div className="about-card">
-          <div className="image">
-            <img src={packaging} alt="packaging" />
-          </div>
-          <div className="card-info">
-            <h6>Packaging</h6>
-            <p>
-              We safely deliver all your heavy and bulky (precious) packages
-              from one area to another. If you have a package and need to
-              deliver it, you can trust us to do it for you in no time.
-            </p>
-          </div>
-        </div> */}
         <div className="about-card">
           <div className="image">
             <img src={trucking} alt="trucking" />
           </div>
           <div className="card-info">
-            <h6>Trucking</h6>
+            <h6>Cargo/Freight</h6>
             <p>
-              We move heavy items like furniture, appliances, building
-              accessories and we do it in the safest and quickest way with our
-              express trucking services all over the United States.
+              We provide relaible and on-time dry Cargo and Freight delivery. We
+              do it in the safest and quickest way with our express trucking
+              services all over the region in the United States.
             </p>
           </div>
         </div>
@@ -94,11 +70,11 @@ const Main = () => (
             <img src={delivery} alt="delivery" />
           </div>
           <div className="card-info">
-            <h6> Cargo/Freight </h6>
+            <h6> Delivery </h6>
             <p>
-              We provide relaible and on-time dry Cargo and Freight delivery. We
-              do it in the safest and quickest way with our express trucking
-              services all over the region in the United States
+              We also deliver packages from the North, East, South and West
+              region of United States. If you wish to send a parcel, you can
+              always rely on our express delivery services.
             </p>
           </div>
         </div>
@@ -333,7 +309,7 @@ const MainContainer = styled.main`
   }
 
   .logo {
-    color: silver;
+    color: #daa520;
   }
 
   .main-about-bottom {

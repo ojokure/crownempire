@@ -16,12 +16,19 @@ const Footer = () => (
       <div className="footer-content footer-icons">
         <div className="footer-icon">
           <i className="fa fa-phone-square"></i>
-          <div> (301)-861-2040</div>
+          <a href="tel:301-861-2040" style={{ color: "white" }}>
+            {"  (301)-861-2040"}
+          </a>
         </div>
-        <div className="footer-icon">
-          <i className="fa fa-envelope"></i>{" "}
-          <div>contact@crownempirellc.com</div>
-        </div>
+        <span className="footer-icon">
+          <i className="fa fa-envelope"></i>
+          <a
+            href="mailto:contact@crownempirellc.com"
+            style={{ color: "white" }}
+          >
+            {"   contact@crownempirellc.com"}
+          </a>
+        </span>
       </div>
       <div className="footer-content footer-address">
         <p>
@@ -89,7 +96,8 @@ const FooterContainer = styled.div`
     }
 
     .footer-content {
-      width: 30rem;
+      width: 34rem;
+      padding: 0;
       /* opacity: 0.7; */
 
       @media ${devices.tablet} {
@@ -109,7 +117,7 @@ const FooterContainer = styled.div`
   .footer-icons {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     font-size: 1.3rem;
     margin: 25px;
