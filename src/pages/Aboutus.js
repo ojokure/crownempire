@@ -104,15 +104,7 @@ const Aboutus = () => {
             </p>
           </div>
           <div className="career-image-div">
-            <img
-              src={driver}
-              alt="driver"
-              style={{
-                width: "100%",
-                height: "100%",
-                textAlign: "center",
-              }}
-            />
+            <img src={driver} alt="driver" />
           </div>
         </StyledCareer>
         <p className="career-bottom-par">
@@ -170,11 +162,11 @@ const StyledCareer = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  align-content: center;
+  /* align-content: center; */
   /* padding-top: 4rem; */
 
   @media ${devices.tablet} {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   h5 {
@@ -217,6 +209,10 @@ const StyledCareer = styled.div`
     font-family: "Lateef", cursive;
     color: #3f3d56;
     padding-bottom: 1.5rem;
+
+    @media ${devices.mobile} {
+      text-align: center;
+    }
   }
   .career-image-div {
     max-width: 70%;
@@ -226,11 +222,27 @@ const StyledCareer = styled.div`
     margin: 0px;
 
     img {
+      width: 100%;
+      height: 100%;
+      text-align: center;
       border-radius: 8%;
+
+      @media ${devices.mobile} {
+        text-align: center;
+        width: 150%;
+      }
     }
 
     @media ${devices.tablet} {
-      /* display: none; */
+      width: 600px;
+      text-align: center;
+      margin-left: 100px;
+    }
+
+    @media ${devices.mobile} {
+      width: 360px;
+      text-align: center;
+      margin-left: 10px;
     }
   }
 `;
