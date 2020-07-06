@@ -2,7 +2,6 @@ import React from "react";
 import Header from "../components/Website/Header";
 import Footer from "../components/Website/Footer";
 import styled from "styled-components";
-// import contact from "../assets/images/contact.png";
 import contact2 from "../assets/images/contact2.png";
 import devices from "../utils/devices";
 
