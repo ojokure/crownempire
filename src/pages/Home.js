@@ -152,7 +152,6 @@ const ParallaxContainer = styled.div`
     min-height: 100vh;
     background: white;
     transform: translateZ(0);
-    /* height: 100vh; */
     overflow: hidden;
     display: flex;
     flex-direction: column;

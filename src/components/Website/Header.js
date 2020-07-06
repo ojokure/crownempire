@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Navigation from "./Navigation";
 import headerImage from "../../assets/images/headerImage.jpg";
 
-const Header = ({ image, height, title, story }) => {
+const Header = ({ height }) => {
   return (
     <StyledHeader height={height}>
       <div className="hero-background">
@@ -11,9 +11,6 @@ const Header = ({ image, height, title, story }) => {
       </div>
       <div className="hero-content">
         <Navigation />
-        {/* 
-        <h1>{title}</h1>
-        <p>{story}</p> */}
       </div>
     </StyledHeader>
   );
@@ -56,7 +53,6 @@ const StyledHeader = styled.header`
     z-index: 2;
     max-width: ${(props) => props.theme.largeMaxWidth};
     height: 100%;
-    /* max-height: 75vh */
     display: flex;
     flex-direction: column;
     margin: 0 auto;

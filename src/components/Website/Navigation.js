@@ -37,11 +37,7 @@ const Navigation = ({ noheader, ishome }) => {
             Contact
           </NavLink>
         </li>
-        {/* <li onClick={toggleNav}>
-          <NavLink activeClassName="selected" to="/volunteer">
-            Volunteer
-          </NavLink>
-        </li> */}
+
         {localStorage.getItem("token") && (
           <li onClick={toggleNav}>
             <NavLink activeClassName="selected" to="/dashboard">
