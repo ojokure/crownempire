@@ -44,9 +44,7 @@ export default Footer;
 
 const FooterContainer = styled.div`
   width: 100%;
-  /* background: #292d38; */
   background: #65617d;
-  /* background: #6c63ff; */
 
   display: flex;
   flex-direction: column;
@@ -98,7 +96,6 @@ const FooterContainer = styled.div`
     .footer-content {
       width: 34rem;
       padding: 0;
-      /* opacity: 0.7; */
 
       @media ${devices.tablet} {
         padding: 0.5rem 0;
@@ -109,7 +106,6 @@ const FooterContainer = styled.div`
 
   .footer-copyright {
     font-weight: bold;
-    /* margin-left: 2.5rem; */
     font-size: 1.4rem;
     color: white;
   }
@@ -133,7 +129,6 @@ const FooterContainer = styled.div`
   .footer-address {
     font-weight: bold;
     font-size: 1.6rem;
-    /* margin-right: 5.8rem; */
 
     color: white;
   }

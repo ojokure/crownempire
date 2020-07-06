@@ -17,8 +17,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        font-family: Nunito, sans-serif;
-        /* background: darkgray; */
+        font-family: sans-serif;
 
         font-weight: 400;
         overflow-x: hidden;
@@ -29,7 +28,6 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     h1, h2, h3, h4, h5, h6, a {
-        /* font-weight: 600; */
         font-family: Nunito, sans-serif;
 
     }
