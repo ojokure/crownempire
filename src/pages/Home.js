@@ -1,14 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-// import { Link } from "react-router-dom";
-// import { connect } from "react-redux";
-// import * as actions from "../state/actions";
-// import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { slides } from "../utils/data";
 import Slider from "../components/Website/Slider";
 import Navigation from "../components/Website/Navigation";
-// import Roller from "../components/LoadingIndicator/roller";
 import Footer from "../components/Website/Footer";
 import Main from "../pages/Main";
 
@@ -202,129 +197,6 @@ const ParallaxContainer = styled.div`
 
         p {
           width: 100%;
-        }
-      }
-    }
-
-    .blog-section {
-      display: flex;
-      flex: 1 1 auto;
-
-      & > div {
-        background: #f2f6f5;
-        height: 100%;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 5rem 2rem;
-
-        &.recent-posts {
-          background: rgba(244, 244, 244, 0.24);
-
-          ul {
-            max-width: 300px;
-            width: 100%;
-            text-align: left;
-            list-style-type: none;
-
-            li {
-              margin-bottom: 3rem;
-              list-style-type: none;
-
-              h3 {
-                font-size: 2.4rem;
-                margin-bottom: 0.5rem;
-              }
-
-              p {
-                font-size: 1.55rem;
-                line-height: 1.3;
-              }
-
-              a {
-                font-size: 1.4rem;
-                margin-top: 1rem;
-                display: inline-block;
-                color: ${(props) => props.theme.primaryColor};
-                width: fit-content;
-                display: inline-block;
-                border-bottom: 3px solid transparent;
-
-                &:hover {
-                  border-bottom: 3px solid
-                    ${(props) => props.theme.primaryColor};
-                }
-              }
-            }
-          }
-        }
-
-        &.statistics {
-          & > div {
-            max-width: 450px;
-            width: 100%;
-            text-align: left;
-          }
-
-          .stats {
-            font-size: 7rem;
-            letter-spacing: -5px;
-            font-family: ${(props) => props.theme.headingFont};
-          }
-
-          .stats-summary {
-            font-size: 1.7rem;
-            line-height: 1.5;
-          }
-
-          a {
-            color: ${(props) => props.theme.primaryColor};
-            margin-top: 2rem;
-            font-size: 1.7rem;
-            width: fit-content;
-            display: inline-block;
-            border-bottom: 3px solid transparent;
-
-            &:hover {
-              border-bottom: 3px solid ${(props) => props.theme.primaryColor};
-            }
-          }
-        }
-      }
-
-      @media (max-width: 650px) {
-        flex-direction: column;
-
-        & > div {
-          width: 100%;
-
-          &.statistics {
-            padding: 3rem 2rem 4.5rem;
-
-            & > div {
-              max-width: 300px;
-              width: 100%;
-              text-align: center;
-
-              .stats {
-                font-size: 6rem;
-                letter-spacing: -5px;
-              }
-            }
-          }
-        }
-      }
-
-      @media (max-width: 400px) {
-        & > div {
-          &.statistics {
-            .stats,
-            .stats-summary {
-              text-align: left;
-            }
-          }
         }
       }
     }

@@ -1,10 +1,8 @@
 import React from "react";
 
 import "react-toastify/dist/ReactToastify.css";
-// import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Header from "../components/Website/Header";
-// import trk3 from "../assets/images/trk3.jpg";
 import Footer from "../components/Website/Footer";
 import ceo from "../assets/images/ceo.jpg";
 import driver from "../assets/images/driver2.jpg";
@@ -64,12 +62,7 @@ const Aboutus = () => {
         </StyledContent>
       </StyledContainer>
 
-      <StyledAboutBottom>
-        {/* <div>
-          So what are you waiting for? If you want to move something across the
-          town or the state, we're here to take care of it.
-        </div> */}
-      </StyledAboutBottom>
+      <StyledAboutBottom></StyledAboutBottom>
       <CareerConatiner>
         <h3> CAREERS </h3>
         <StyledCareer>
@@ -87,11 +80,7 @@ const Aboutus = () => {
               value our people as the greatest assets, so we give attention to
               their welfare, training and development.
             </p>
-            {/* <p className="career-par">
-              Taking care of our efficient and hardworking employees is our top
-              priority. If they are benefitting our company, we benefit them
-              equally.
-            </p> */}
+
             <p className="career-par">
               We don’t just offer jobs. We are welcoming you into a company with
               a crucial mind-set and an organization that values its employees.
@@ -139,7 +128,6 @@ const CareerConatiner = styled.div`
     line-height: 1.4;
     margin: 0;
     font-weight: bold;
-    /* max-width: 90rem; */
     font-family: "Lateef", cursive;
     color: #3f3d56;
   }
@@ -149,7 +137,6 @@ const CareerConatiner = styled.div`
     text-align: center;
     font-size: 4.2rem;
     font-weight: 600;
-    /* font-family: "Lateef", cursive; */
   }
 
   .anchor {
@@ -162,8 +149,6 @@ const StyledCareer = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  /* align-content: center; */
-  /* padding-top: 4rem; */
 
   @media ${devices.tablet} {
     flex-direction: column-reverse;
@@ -174,7 +159,6 @@ const StyledCareer = styled.div`
     text-align: center;
     font-weight: 600;
     font-size: 2.5rem;
-    /* font-family: "Lateef", cursive; */
   }
 
   .career-content {
@@ -182,25 +166,21 @@ const StyledCareer = styled.div`
     flex-direction: column;
     width: 100;
     height: 100%;
-    /* text-align: center; */
     justify-content: center;
     padding: 30px;
     padding-top: 30px;
 
     h4 {
-      /* font-family: "Lateef", cursive; */
       color: #3f3d56;
       text-align: center;
       font-size: 3rem;
       font-weight: 600;
     }
     @media ${devices.tablet} {
-      /* max-width: 350px; */
     }
   }
 
   .career-par {
-    /* text-align: center; */
     font-size: 21px;
     line-height: 1.3;
     margin: 0;
@@ -248,18 +228,13 @@ const StyledCareer = styled.div`
 `;
 
 const StyledContainer = styled.div`
-  /* margin: 0 auto;
-  width: 85vw; */
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
-  /* text-align: center; */
   padding-top: 55px;
   padding-left: 60px;
-  /* padding-right: 60px;  */
 
   font-size: 2.2rem;
   font-family: "Lateef", cursive;
@@ -273,10 +248,6 @@ const StyledContainer = styled.div`
     font-size: 2.1rem;
     width: 60rem;
     color: #707070;
-
-    /* padding: 1rem; */
-    /* margin: 2rem; */
-    /* text-align: center; */
   }
 
   @media ${devices.tablet} {
@@ -290,17 +261,13 @@ const StyledContent = styled.div`
   flex-direction: column;
   color: #707070;
 
-  /* justify-content: center; */
   align-items: center;
-  /* padding-top: 20px; */
-  /* height: 80%; */
+
   width: 60%;
 
   p {
     margin: 0;
-    /* margin-bottom: 15.025px; */
     font-size: 21px;
-    /* color: #707070; */
     color: #3f3d56;
 
     font-weight: 800;
@@ -316,8 +283,6 @@ const StyledContent = styled.div`
     font-size: 4rem;
     font-weight: bold;
     text-align: center;
-
-    /* font-family: "Lateef", cursive; */
   }
 
   h4 {
@@ -340,11 +305,9 @@ const StyledAbout = styled.div`
   color: #707070;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* width: 100%; */
+
   align-items: center;
   padding-top: 25px;
-  /* margin-top: 0;  */
 
   .about-cards-container {
     display: flex;
@@ -365,14 +328,12 @@ const StyledAbout = styled.div`
     text-align: center;
     border-radius: 6px;
     width: 32rem;
-    /* background: #daefdf; */
   }
 
   .card-image {
     width: 100%;
     height: 16rem;
     background: #7a7a7a;
-    /* background: #65617d; */
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 49%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 49%, 0% 100%);
     border-radius: 6px;
@@ -385,7 +346,6 @@ const StyledAbout = styled.div`
     object-fit: cover;
     margin-top: -10rem;
     z-index: 1000;
-    /* border: 1rem solid #daefdf; */
   }
 
   .info {

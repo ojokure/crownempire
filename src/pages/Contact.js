@@ -1,126 +1,154 @@
 import React from "react";
-// import { connect } from "react-redux";
 import Header from "../components/Website/Header";
+import Footer from "../components/Website/Footer";
+import styled from "styled-components";
+// import contact from "../assets/images/contact.png";
+import contact2 from "../assets/images/contact2.png";
+import devices from "../utils/devices";
 
 const Contact = () => {
   return (
     <>
       <Header height="70vh" />
+      <StyledContactContainer>
+        <h3>Contact Us </h3>
+        <h5>
+          We strive to provide the best service possible with every contact. Get
+          in touch and let us know how we can help.
+        </h5>
+        <StyledContacts>
+          <div className="contact-image">
+            <img src={contact2} alt="customer care" />
+          </div>
+          <div className="contacts-content">
+            <p>
+              <h4 className="contct">Chat </h4>
+              You can chat with our representatives live via the chat icon in
+              the bottom right corner.
+            </p>
+            <p className="content-par">
+              <h4 className="contct">Email </h4>
+              You can reach out to us for more inquiries via our email
+              <a className="anchor" href="mailto:careers@crownempirellc.com">
+                {"  contact@crownempirellc.com."}
+              </a>
+            </p>
+            <p className="content-par">
+              <h4 className="contct">Telephone </h4>
+              To contact us over the phone and talk to our representatives,
+              please call
+              <a className="anchor" href="tel:301-861-2040">
+                {" (301)-861-2040."}
+              </a>
+            </p>
+            <p className="content-par">
+              <h4 className="contct">Address</h4>
+              Main Office 5457 Twin Knolls Road, Suite 300, Columbia, MD 21045
+            </p>
+          </div>
+        </StyledContacts>
+      </StyledContactContainer>
+      <Footer />
     </>
   );
 };
 
 export default Contact;
 
-// const StyledContainer = styled.main`
-//   padding: 2rem;
-//   min-height: 100vh;
+const StyledContacts = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
 
-//   form {
-//     max-width: ${(props) => props.theme.mediumMaxWidth};
-//     margin: 4rem auto 0;
+  @media ${devices.tablet} {
+    flex-direction: column;
+  }
 
-//     label {
-//       display: flex;
-//       flex-direction: column;
-//       width: 100%;
-//       margin-bottom: 1.3rem;
+  .anchor {
+    font-family: "Lateef", cursive;
+    color: #0097cd;
+  }
+  .contacts-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50;
+    height: 100%;
+    padding: 30px;
 
-//       & > span.sr {
-//         height: 0;
-//         width: 0;
-//         visibility: hidden;
-//       }
+    .contct {
+      color: #3f3d56;
+      font-size: 2.6rem;
+      font-weight: bold;
+      text-align: start;
+      padding-top: 20px;
+    }
 
-//       input {
-//         outline: none;
-//         border: none;
-//         font-size: 40px;
-//         background: transparent;
+    content-par {
+      font-size: 2.3rem;
+      line-height: 1.3;
+      font-weight: bold;
+      padding-bottom: 2rem;
+      font-family: "Lateef", cursive;
+      color: #3f3d56;
+    }
+    content-head {
+      font-size: 2rem;
+      line-height: 1.3;
+      font-weight: bold;
+      padding-bottom: 2rem;
+      font-family: "Lateef", cursive;
+      color: #3f3d56;
+    }
+    @media ${devices.tablet} {
+      margin-left: 0px;
+    }
+  }
 
-//         &::-webkit-input-placeholder {
-//           /* Chrome/Opera/Safari */
-//           font-size: 40px;
-//           color: ${(props) => props.theme.primaryGrey};
-//         }
-//         &::-moz-placeholder {
-//           /* Firefox 19+ */
-//           font-size: 40px;
-//           color: ${(props) => props.theme.primaryGrey};
-//         }
-//         &:-ms-input-placeholder {
-//           /* IE 10+ */
-//           font-size: 40px;
-//           color: ${(props) => props.theme.primaryGrey};
-//         }
-//         &:-moz-placeholder {
-//           /* Firefox 18- */
-//           font-size: 40px;
-//           color: ${(props) => props.theme.primaryGrey};
-//         }
-//       }
+  .contact-image {
+    width: 50%;
+    height: 100%;
+    margin: 0px;
+    text-align: center;
+    @media ${devices.mobile} {
+      width: 100%;
+    }
+    img {
+      text-align: center;
+      width: 70%;
+      height: 90%;
 
-//       textarea {
-//         outline: none;
-//         border: none;
-//         resize: none;
-//         font-size: 17px;
-//         background: transparent;
-//         margin-left: 5px;
-//         line-height: 1.58;
+      @media ${devices.tablet} {
+        width: 100%;
+      }
+    }
+  }
+`;
+const StyledContactContainer = styled.div`
+  padding: 30px;
+  p {
+    margin: 0;
+    font-size: 21px;
+    color: #3f3d56;
+    font-family: "Lateef", cursive;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  h3 {
+    color: #3f3d56;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+  }
 
-//         &::-webkit-input-placeholder {
-//           /* Chrome/Opera/Safari */
-//           font-size: 17px;
-//         }
-//         &::-moz-placeholder {
-//           /* Firefox 19+ */
-//           font-size: 17px;
-//         }
-//         &:-ms-input-placeholder {
-//           /* IE 10+ */
-//           font-size: 17px;
-//         }
-//         &:-moz-placeholder {
-//           /* Firefox 18- */
-//           font-size: 17px;
-//         }
-//       }
-//     }
-
-//     button.submit-btn {
-//       outline: 0;
-//       background: ${(props) => props.theme.primaryDarkGrey};
-//       border: none;
-//       color: ${(props) => props.theme.white};
-//       font-weight: 700;
-//       text-align: center;
-//       border-radius: 5px;
-//       box-shadow: 0 0 0 1px transparent inset,
-//         0 0 0 0 rgba(34, 36, 38, 0.15) inset;
-//       user-select: none;
-//       transition: opacity 0.1s ease, background-color 0.1s ease, color 0.1s ease,
-//         box-shadow 0.1s ease, background 0.1s ease, -webkit-box-shadow 0.1s ease;
-//       -webkit-tap-highlight-color: transparent;
-//       padding: 0.5rem 2rem;
-//       min-height: 40px;
-//       min-width: 150px;
-//       font-size: 1.5rem;
-//       margin-top: 2rem;
-
-//       &.is-active {
-//         background-color: ${(props) => props.theme.primaryColor};
-//       }
-
-//       &:hover {
-//         background-color: ${(props) => props.theme.primaryColor};
-//         background-image: none;
-//         -webkit-box-shadow: 0 0 0 1px transparent inset,
-//           0 0 0 0 rgba(34, 36, 38, 0.15) inset;
-//         box-shadow: 0 0 0 1px transparent inset,
-//           0 0 0 0 rgba(34, 36, 38, 0.15) inset;
-//         color: rgba(255, 255, 255, 0.8);
-//       }
-//     }
-//   }
-// `;
+  h5 {
+    color: #3f3d56;
+    font-size: 2.5rem;
+    padding: 10px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Lateef", cursive;
+  }
+`;
